@@ -1,0 +1,706 @@
+{
+  "AzureSimplified": {
+    "prefix": "Azure Simplified",
+    "description": "Add Azure Simplified to diagram",
+    "body": [
+      "AzureSimplified(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "AzureSimplified_Descr": {
+    "prefix": "Azure Simplified with Description",
+    "description": "Add Azure Simplified with Description to diagram",
+    "body": [
+      "AzureSimplified(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "AzureC4Integration": {
+    "prefix": "Azure C4 Integration",
+    "description": "Add Azure C4 Integration to diagram",
+    "body": [
+      "AzureC4Integration(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "AzureC4Integration_Descr": {
+    "prefix": "Azure C4 Integration with Description",
+    "description": "Add Azure C4 Integration with Description to diagram",
+    "body": [
+      "AzureC4Integration(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "AzureCommon": {
+    "prefix": "Azure Common",
+    "description": "Add Azure Common to diagram",
+    "body": [
+      "AzureCommon(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "AzureCommon_Descr": {
+    "prefix": "Azure Common with Description",
+    "description": "Add Azure Common with Description to diagram",
+    "body": [
+      "AzureCommon(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "AzureRaw": {
+    "prefix": "Azure Raw",
+    "description": "Add Azure Raw to diagram",
+    "body": [
+      "AzureRaw(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "AzureRaw_Descr": {
+    "prefix": "Azure Raw with Description",
+    "description": "Add Azure Raw with Description to diagram",
+    "body": [
+      "AzureRaw(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "AzureWebApp": {
+    "prefix": "Azure Web App",
+    "description": "Add Azure Web App to diagram",
+    "body": [
+      "AzureWebApp(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "AzureWebApp_Descr": {
+    "prefix": "Azure Web App with Description",
+    "description": "Add Azure Web App with Description to diagram",
+    "body": [
+      "AzureWebApp(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "AzureSignalRService": {
+    "prefix": "Azure Signal R Service",
+    "description": "Add Azure Signal R Service to diagram",
+    "body": [
+      "AzureSignalRService(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "AzureSignalRService_Descr": {
+    "prefix": "Azure Signal R Service with Description",
+    "description": "Add Azure Signal R Service with Description to diagram",
+    "body": [
+      "AzureSignalRService(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesPod": {
+    "prefix": "Kubernetes Pod",
+    "description": "Add Kubernetes Pod to diagram",
+    "body": [
+      "KubernetesPod(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesPod_Descr": {
+    "prefix": "Kubernetes Pod with Description",
+    "description": "Add Kubernetes Pod with Description to diagram",
+    "body": [
+      "KubernetesPod(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCronjob": {
+    "prefix": "Kubernetes Cronjob",
+    "description": "Add Kubernetes Cronjob to diagram",
+    "body": [
+      "KubernetesCronjob(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCronjob_Descr": {
+    "prefix": "Kubernetes Cronjob with Description",
+    "description": "Add Kubernetes Cronjob with Description to diagram",
+    "body": [
+      "KubernetesCronjob(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesGroup": {
+    "prefix": "Kubernetes Group",
+    "description": "Add Kubernetes Group to diagram",
+    "body": [
+      "KubernetesGroup(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesGroup_Descr": {
+    "prefix": "Kubernetes Group with Description",
+    "description": "Add Kubernetes Group with Description to diagram",
+    "body": [
+      "KubernetesGroup(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesPsp": {
+    "prefix": "Kubernetes Psp",
+    "description": "Add Kubernetes Psp to diagram",
+    "body": [
+      "KubernetesPsp(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesPsp_Descr": {
+    "prefix": "Kubernetes Psp with Description",
+    "description": "Add Kubernetes Psp with Description to diagram",
+    "body": [
+      "KubernetesPsp(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesRole": {
+    "prefix": "Kubernetes Role",
+    "description": "Add Kubernetes Role to diagram",
+    "body": [
+      "KubernetesRole(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesRole_Descr": {
+    "prefix": "Kubernetes Role with Description",
+    "description": "Add Kubernetes Role with Description to diagram",
+    "body": [
+      "KubernetesRole(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesApi": {
+    "prefix": "Kubernetes Api",
+    "description": "Add Kubernetes Api to diagram",
+    "body": [
+      "KubernetesApi(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesApi_Descr": {
+    "prefix": "Kubernetes Api with Description",
+    "description": "Add Kubernetes Api with Description to diagram",
+    "body": [
+      "KubernetesApi(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesJob": {
+    "prefix": "Kubernetes Job",
+    "description": "Add Kubernetes Job to diagram",
+    "body": [
+      "KubernetesJob(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesJob_Descr": {
+    "prefix": "Kubernetes Job with Description",
+    "description": "Add Kubernetes Job with Description to diagram",
+    "body": [
+      "KubernetesJob(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCm": {
+    "prefix": "Kubernetes Cm",
+    "description": "Add Kubernetes Cm to diagram",
+    "body": [
+      "KubernetesCm(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCm_Descr": {
+    "prefix": "Kubernetes Cm with Description",
+    "description": "Add Kubernetes Cm with Description to diagram",
+    "body": [
+      "KubernetesCm(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesMaster": {
+    "prefix": "Kubernetes Master",
+    "description": "Add Kubernetes Master to diagram",
+    "body": [
+      "KubernetesMaster(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesMaster_Descr": {
+    "prefix": "Kubernetes Master with Description",
+    "description": "Add Kubernetes Master with Description to diagram",
+    "body": [
+      "KubernetesMaster(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesKproxy": {
+    "prefix": "Kubernetes Kproxy",
+    "description": "Add Kubernetes Kproxy to diagram",
+    "body": [
+      "KubernetesKproxy(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesKproxy_Descr": {
+    "prefix": "Kubernetes Kproxy with Description",
+    "description": "Add Kubernetes Kproxy with Description to diagram",
+    "body": [
+      "KubernetesKproxy(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCrd": {
+    "prefix": "Kubernetes Crd",
+    "description": "Add Kubernetes Crd to diagram",
+    "body": [
+      "KubernetesCrd(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCrd_Descr": {
+    "prefix": "Kubernetes Crd with Description",
+    "description": "Add Kubernetes Crd with Description to diagram",
+    "body": [
+      "KubernetesCrd(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesDs": {
+    "prefix": "Kubernetes Ds",
+    "description": "Add Kubernetes Ds to diagram",
+    "body": [
+      "KubernetesDs(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesDs_Descr": {
+    "prefix": "Kubernetes Ds with Description",
+    "description": "Add Kubernetes Ds with Description to diagram",
+    "body": [
+      "KubernetesDs(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSc": {
+    "prefix": "Kubernetes Sc",
+    "description": "Add Kubernetes Sc to diagram",
+    "body": [
+      "KubernetesSc(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSc_Descr": {
+    "prefix": "Kubernetes Sc with Description",
+    "description": "Add Kubernetes Sc with Description to diagram",
+    "body": [
+      "KubernetesSc(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCrb": {
+    "prefix": "Kubernetes Crb",
+    "description": "Add Kubernetes Crb to diagram",
+    "body": [
+      "KubernetesCrb(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCrb_Descr": {
+    "prefix": "Kubernetes Crb with Description",
+    "description": "Add Kubernetes Crb with Description to diagram",
+    "body": [
+      "KubernetesCrb(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSched": {
+    "prefix": "Kubernetes Sched",
+    "description": "Add Kubernetes Sched to diagram",
+    "body": [
+      "KubernetesSched(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSched_Descr": {
+    "prefix": "Kubernetes Sched with Description",
+    "description": "Add Kubernetes Sched with Description to diagram",
+    "body": [
+      "KubernetesSched(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesLimits": {
+    "prefix": "Kubernetes Limits",
+    "description": "Add Kubernetes Limits to diagram",
+    "body": [
+      "KubernetesLimits(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesLimits_Descr": {
+    "prefix": "Kubernetes Limits with Description",
+    "description": "Add Kubernetes Limits with Description to diagram",
+    "body": [
+      "KubernetesLimits(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesQuota": {
+    "prefix": "Kubernetes Quota",
+    "description": "Add Kubernetes Quota to diagram",
+    "body": [
+      "KubernetesQuota(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesQuota_Descr": {
+    "prefix": "Kubernetes Quota with Description",
+    "description": "Add Kubernetes Quota with Description to diagram",
+    "body": [
+      "KubernetesQuota(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesVol": {
+    "prefix": "Kubernetes Vol",
+    "description": "Add Kubernetes Vol to diagram",
+    "body": [
+      "KubernetesVol(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesVol_Descr": {
+    "prefix": "Kubernetes Vol with Description",
+    "description": "Add Kubernetes Vol with Description to diagram",
+    "body": [
+      "KubernetesVol(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSa": {
+    "prefix": "Kubernetes Sa",
+    "description": "Add Kubernetes Sa to diagram",
+    "body": [
+      "KubernetesSa(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSa_Descr": {
+    "prefix": "Kubernetes Sa with Description",
+    "description": "Add Kubernetes Sa with Description to diagram",
+    "body": [
+      "KubernetesSa(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesKubelet": {
+    "prefix": "Kubernetes Kubelet",
+    "description": "Add Kubernetes Kubelet to diagram",
+    "body": [
+      "KubernetesKubelet(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesKubelet_Descr": {
+    "prefix": "Kubernetes Kubelet with Description",
+    "description": "Add Kubernetes Kubelet with Description to diagram",
+    "body": [
+      "KubernetesKubelet(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesPvc": {
+    "prefix": "Kubernetes Pvc",
+    "description": "Add Kubernetes Pvc to diagram",
+    "body": [
+      "KubernetesPvc(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesPvc_Descr": {
+    "prefix": "Kubernetes Pvc with Description",
+    "description": "Add Kubernetes Pvc with Description to diagram",
+    "body": [
+      "KubernetesPvc(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCcm": {
+    "prefix": "Kubernetes Ccm",
+    "description": "Add Kubernetes Ccm to diagram",
+    "body": [
+      "KubernetesCcm(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCcm_Descr": {
+    "prefix": "Kubernetes Ccm with Description",
+    "description": "Add Kubernetes Ccm with Description to diagram",
+    "body": [
+      "KubernetesCcm(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSts": {
+    "prefix": "Kubernetes Sts",
+    "description": "Add Kubernetes Sts to diagram",
+    "body": [
+      "KubernetesSts(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSts_Descr": {
+    "prefix": "Kubernetes Sts with Description",
+    "description": "Add Kubernetes Sts with Description to diagram",
+    "body": [
+      "KubernetesSts(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesNetpol": {
+    "prefix": "Kubernetes Netpol",
+    "description": "Add Kubernetes Netpol to diagram",
+    "body": [
+      "KubernetesNetpol(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesNetpol_Descr": {
+    "prefix": "Kubernetes Netpol with Description",
+    "description": "Add Kubernetes Netpol with Description to diagram",
+    "body": [
+      "KubernetesNetpol(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCrole": {
+    "prefix": "Kubernetes Crole",
+    "description": "Add Kubernetes Crole to diagram",
+    "body": [
+      "KubernetesCrole(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesCrole_Descr": {
+    "prefix": "Kubernetes Crole with Description",
+    "description": "Add Kubernetes Crole with Description to diagram",
+    "body": [
+      "KubernetesCrole(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesRs": {
+    "prefix": "Kubernetes Rs",
+    "description": "Add Kubernetes Rs to diagram",
+    "body": [
+      "KubernetesRs(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesRs_Descr": {
+    "prefix": "Kubernetes Rs with Description",
+    "description": "Add Kubernetes Rs with Description to diagram",
+    "body": [
+      "KubernetesRs(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesNode": {
+    "prefix": "Kubernetes Node",
+    "description": "Add Kubernetes Node to diagram",
+    "body": [
+      "KubernetesNode(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesNode_Descr": {
+    "prefix": "Kubernetes Node with Description",
+    "description": "Add Kubernetes Node with Description to diagram",
+    "body": [
+      "KubernetesNode(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSecret": {
+    "prefix": "Kubernetes Secret",
+    "description": "Add Kubernetes Secret to diagram",
+    "body": [
+      "KubernetesSecret(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSecret_Descr": {
+    "prefix": "Kubernetes Secret with Description",
+    "description": "Add Kubernetes Secret with Description to diagram",
+    "body": [
+      "KubernetesSecret(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesNs": {
+    "prefix": "Kubernetes Ns",
+    "description": "Add Kubernetes Ns to diagram",
+    "body": [
+      "KubernetesNs(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesNs_Descr": {
+    "prefix": "Kubernetes Ns with Description",
+    "description": "Add Kubernetes Ns with Description to diagram",
+    "body": [
+      "KubernetesNs(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesDeploy": {
+    "prefix": "Kubernetes Deploy",
+    "description": "Add Kubernetes Deploy to diagram",
+    "body": [
+      "KubernetesDeploy(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesDeploy_Descr": {
+    "prefix": "Kubernetes Deploy with Description",
+    "description": "Add Kubernetes Deploy with Description to diagram",
+    "body": [
+      "KubernetesDeploy(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesUser": {
+    "prefix": "Kubernetes User",
+    "description": "Add Kubernetes User to diagram",
+    "body": [
+      "KubernetesUser(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesUser_Descr": {
+    "prefix": "Kubernetes User with Description",
+    "description": "Add Kubernetes User with Description to diagram",
+    "body": [
+      "KubernetesUser(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesPv": {
+    "prefix": "Kubernetes Pv",
+    "description": "Add Kubernetes Pv to diagram",
+    "body": [
+      "KubernetesPv(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesPv_Descr": {
+    "prefix": "Kubernetes Pv with Description",
+    "description": "Add Kubernetes Pv with Description to diagram",
+    "body": [
+      "KubernetesPv(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesEp": {
+    "prefix": "Kubernetes Ep",
+    "description": "Add Kubernetes Ep to diagram",
+    "body": [
+      "KubernetesEp(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesEp_Descr": {
+    "prefix": "Kubernetes Ep with Description",
+    "description": "Add Kubernetes Ep with Description to diagram",
+    "body": [
+      "KubernetesEp(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSvc": {
+    "prefix": "Kubernetes Svc",
+    "description": "Add Kubernetes Svc to diagram",
+    "body": [
+      "KubernetesSvc(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesSvc_Descr": {
+    "prefix": "Kubernetes Svc with Description",
+    "description": "Add Kubernetes Svc with Description to diagram",
+    "body": [
+      "KubernetesSvc(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesRb": {
+    "prefix": "Kubernetes Rb",
+    "description": "Add Kubernetes Rb to diagram",
+    "body": [
+      "KubernetesRb(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesRb_Descr": {
+    "prefix": "Kubernetes Rb with Description",
+    "description": "Add Kubernetes Rb with Description to diagram",
+    "body": [
+      "KubernetesRb(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesEtcd": {
+    "prefix": "Kubernetes Etcd",
+    "description": "Add Kubernetes Etcd to diagram",
+    "body": [
+      "KubernetesEtcd(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesEtcd_Descr": {
+    "prefix": "Kubernetes Etcd with Description",
+    "description": "Add Kubernetes Etcd with Description to diagram",
+    "body": [
+      "KubernetesEtcd(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesIng": {
+    "prefix": "Kubernetes Ing",
+    "description": "Add Kubernetes Ing to diagram",
+    "body": [
+      "KubernetesIng(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesIng_Descr": {
+    "prefix": "Kubernetes Ing with Description",
+    "description": "Add Kubernetes Ing with Description to diagram",
+    "body": [
+      "KubernetesIng(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  },
+  "KubernetesHpa": {
+    "prefix": "Kubernetes Hpa",
+    "description": "Add Kubernetes Hpa to diagram",
+    "body": [
+      "KubernetesHpa(${1:alias}, \"${2:label}\", \"${3:technology}\")",
+      "$0"
+    ]
+  },
+  "KubernetesHpa_Descr": {
+    "prefix": "Kubernetes Hpa with Description",
+    "description": "Add Kubernetes Hpa with Description to diagram",
+    "body": [
+      "KubernetesHpa(${1:alias}, \"${2:label}\", \"${3:technology}\", \"${4:description}\")",
+      "$0"
+    ]
+  }
+}
