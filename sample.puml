@@ -1,0 +1,43 @@
+@startuml kubernetes
+
+footer Kubernetes Plant-UML
+scale max 1024 width
+
+skinparam nodesep 10
+skinparam ranksep 10
+
+' Azure
+!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureSimplified.puml
+
+' Kubernetes
+!define KubernetesC4 https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master
+'!includeurl KubernetesC4/kubernetes_C4.puml
+'!includeurl KubernetesC4/kubernetes_Container.puml
+!includeurl KubernetesC4/kubernetes_Context.puml
+
+!define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+
+!includeurl KubernetesPuml/OSS/KubernetesSvc.puml
+!includeurl KubernetesPuml/OSS/KubernetesPod.puml
+
+actor "User" as userAlias
+left to right direction
+
+' Kubernetes Components
+Cluster_Boundary(cluster, "Kubernetes Cluster") {
+    Namespace_Boundary(ns, "Back End") {
+        KubernetesSvc(svc, "service", "")
+        KubernetesPod(pod1, "", "")
+        KubernetesPod(pod2, "", "")
+    }
+}
+
+Rel(userAlias,svc,"get HTTP/1.1 index.html", "1")
+Rel(svc,pod1,"load Balances to Pods", "2")
+Rel(svc,pod2,"load Balances to Pods", "2")
+Rel(pod1, svc, "serves content", "3")
+Rel(svc, userAlias, "return content to", "4")
+@enduml

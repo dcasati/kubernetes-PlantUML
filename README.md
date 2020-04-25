@@ -1,3 +1,143 @@
+# Kubernetes-PlantUML
+
+These are the PlantUML sprites, macros and stereotypes for creating PlantUML diagrams with the Kubernetes components.
+The official Kubernetes Icons Set (where this work is based) can be found ![here](https://github.com/kubernetes/community/tree/master/icons)
+
+This repo is heavily influenced by the awesome work from Ricardo Niepel on ![Azure-PlantUML](https://github.com/RicardoNiepel/Azure-PlantUML)
+
+## Getting Started
+
+If you're familiar with PlantUML this is what you need:
+```
+' Kubernetes
+!define KubernetesC4 https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/
+!includeurl KubernetesC4/kubernetes_C4.puml  
+!includeurl KubernetesC4/kubernetes_Container.puml
+!includeurl KubernetesC4/kubernetes_Context.puml
+
+!define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+!includeurl KubernetesPuml/OSS/KubernetesPod.puml
+!includeurl KubernetesPuml/OSS/KubernetesPsp.puml
+!includeurl KubernetesPuml/OSS/KubernetesPv.puml
+!includeurl KubernetesPuml/OSS/KubernetesPvc.puml
+
+[...]
+```
+A basic `hello world` would look like this:
+
+```
+@startuml kubernetes
+
+footer Kubernetes Plant-UML
+scale max 1024 width
+
+skinparam nodesep 10
+skinparam ranksep 10
+
+' Azure
+!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureSimplified.puml
+
+' Kubernetes
+!define KubernetesC4 https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master
+'!includeurl KubernetesC4/kubernetes_C4.puml
+'!includeurl KubernetesC4/kubernetes_Container.puml
+!includeurl KubernetesC4/kubernetes_Context.puml
+
+!define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+
+!includeurl KubernetesPuml/OSS/KubernetesSvc.puml
+!includeurl KubernetesPuml/OSS/KubernetesPod.puml
+
+actor "User" as userAlias
+left to right direction
+
+' Kubernetes Components
+Cluster_Boundary(cluster, "Kubernetes Cluster") {
+    Namespace_Boundary(ns, "Web") {
+        KubernetesSvc(svc, "service", "")
+        KubernetesPod(pod1, "web-pod1", "")
+        KubernetesPod(pod2, "web-pod2", "")
+    }
+}
+
+Rel(userAlias,svc,"get HTTP/1.1 index.html", "1")
+Rel(svc,pod1,"load Balances to Pods", "2")
+Rel(svc,pod2,"load Balances to Pods", "2")
+Rel_U(pod1, svc, "serves content", "3")
+Rel(svc, userAlias, "return content to", "4")
+@enduml
+```
+
+A more complete example
+```
+@startuml kubernetes
+
+footer Kubernetes Plant-UML
+scale max 1024 width
+
+skinparam nodesep 10
+skinparam ranksep 10
+
+' Azure
+!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureSimplified.puml
+
+' Kubernetes
+!define KubernetesC4 https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master
+'!includeurl KubernetesC4/kubernetes_C4.puml
+'!includeurl KubernetesC4/kubernetes_Container.puml
+!includeurl KubernetesC4/kubernetes_Context.puml
+
+!define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+
+!includeurl KubernetesPuml/OSS/KubernetesApi.puml
+!includeurl KubernetesPuml/OSS/KubernetesSvc.puml
+!includeurl KubernetesPuml/OSS/KubernetesIng.puml
+!includeurl KubernetesPuml/OSS/KubernetesPod.puml
+!includeurl KubernetesPuml/OSS/KubernetesRs.puml
+!includeurl KubernetesPuml/OSS/KubernetesDeploy.puml
+!includeurl KubernetesPuml/OSS/KubernetesHpa.puml
+
+actor "User" as userAlias
+left to right direction
+
+' Kubernetes Components
+Cluster_Boundary(cluster, "Kubernetes Cluster") {
+    Namespace_Boundary(ns, "Back End") {
+        KubernetesIng(ingress, "your.domain.com", "")
+        KubernetesSvc(svc, "service", "")
+        KubernetesPod(pod1, "", "")
+        KubernetesPod(pod2, "", "")
+        KubernetesPod(pod3, "", "")
+        KubernetesRs(rs,"","")
+        KubernetesDeploy(deploy,"deployment","")
+        KubernetesHpa(hpa, "HPA", "")
+    }
+}
+
+Rel(userAlias,ingress," ")
+Rel(ingress,svc," ")
+
+Rel(svc,pod1," ")
+Rel(svc,pod2," ")
+Rel(svc,pod3," ")
+
+Rel_U(rs,pod1," ")
+Rel_U(rs,pod2," ")
+Rel_U(rs,pod3," ")
+
+Rel_U(deploy,rs, " ")
+Rel_U(hpa,deploy, " ")
+
+@enduml
+```
+
+## List of Supported Symbols
 Category | Macro (Name) | <pre>Color</pre> | <pre>Mono </pre> | Url
   ---    |  ---  | :---:  | :---: | ---
 **OSS** | | | | **OSS/all.puml**
@@ -6,7 +146,6 @@ OSS | KubernetesGroup </br> (Kubernetes Group) |  |![KubernetesGroup](dist/OSS/K
 OSS | KubernetesPsp </br> (Kubernetes Psp) |  |![KubernetesPsp](dist/OSS/KubernetesPsp(m).png?raw=true) | OSS/KubernetesPsp.puml
 OSS | KubernetesRole </br> (Kubernetes Role) |  |![KubernetesRole](dist/OSS/KubernetesRole(m).png?raw=true) | OSS/KubernetesRole.puml
 OSS | KubernetesApi </br> (Kubernetes Api) |  |![KubernetesApi](dist/OSS/KubernetesApi(m).png?raw=true) | OSS/KubernetesApi.puml
-OSS | all </br> (all) |  |![all](dist/OSS/all(m).png?raw=true) | OSS/all.puml
 OSS | KubernetesJob </br> (Kubernetes Job) |  |![KubernetesJob](dist/OSS/KubernetesJob(m).png?raw=true) | OSS/KubernetesJob.puml
 OSS | KubernetesCm </br> (Kubernetes Cm) |  |![KubernetesCm](dist/OSS/KubernetesCm(m).png?raw=true) | OSS/KubernetesCm.puml
 OSS | KubernetesMaster </br> (Kubernetes Master) |  |![KubernetesMaster](dist/OSS/KubernetesMaster(m).png?raw=true) | OSS/KubernetesMaster.puml
