@@ -8,7 +8,7 @@ This repo is heavily influenced by the awesome work from Ricardo Niepel on ![Azu
 ## Getting Started
 
 If you're familiar with PlantUML this is what you need:
-```
+```c#
 ' Kubernetes
 !define KubernetesC4 https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/
 !includeurl KubernetesC4/kubernetes_C4.puml  
@@ -25,7 +25,7 @@ If you're familiar with PlantUML this is what you need:
 ```
 A basic `hello world` would look like this:
 
-```
+```c#
 @startuml kubernetes
 
 footer Kubernetes Plant-UML
@@ -42,8 +42,6 @@ skinparam ranksep 10
 
 ' Kubernetes
 !define KubernetesC4 https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master
-'!includeurl KubernetesC4/kubernetes_C4.puml
-'!includeurl KubernetesC4/kubernetes_Container.puml
 !includeurl KubernetesC4/kubernetes_Context.puml
 
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
