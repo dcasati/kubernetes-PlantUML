@@ -1,8 +1,5 @@
 Category | Macro (Name) | <pre>Color</pre> | <pre>Mono </pre> | Url
   ---    |  ---  | :---:  | :---: | ---
-**Web** | | | | **Web/all.puml**
-Web | all </br> (all) |  |![all](dist/Web/all(m).png?raw=true) | Web/all.puml
-Web | AzureSignalRService </br> (Azure SignalR Service) | ![AzureSignalRService](dist/Web/AzureSignalRService.png?raw=true) | ![AzureSignalRService](dist/Web/AzureSignalRService(m).png?raw=true) | Web/AzureSignalRService.puml
 **OSS** | | | | **OSS/all.puml**
 OSS | KubernetesCronjob </br> (Kubernetes Cronjob) |  |![KubernetesCronjob](dist/OSS/KubernetesCronjob(m).png?raw=true) | OSS/KubernetesCronjob.puml
 OSS | KubernetesGroup </br> (Kubernetes Group) |  |![KubernetesGroup](dist/OSS/KubernetesGroup(m).png?raw=true) | OSS/KubernetesGroup.puml

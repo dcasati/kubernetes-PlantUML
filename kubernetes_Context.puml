@@ -1,5 +1,6 @@
 ' uncomment the following line and comment the first to use locally
-!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/kubernetes_C4.puml
+'!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/kubernetes_C4.puml
+!include kubernetes_C4.puml
 
 ' Colors
 ' ##################################
