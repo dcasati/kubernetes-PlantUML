@@ -1,4 +1,4 @@
-!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/dist/master/kubernetes_Context.puml
+!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
 ' uncomment the following line and comment the first to use locally
 ' !include kubernetes_Context.puml
 
