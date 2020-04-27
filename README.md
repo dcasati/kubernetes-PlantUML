@@ -5,7 +5,14 @@ The official Kubernetes Icons Set (where this work is based) can be found [here]
 
 This repo is heavily influenced by the awesome work from Ricardo Niepel on [Azure-PlantUML](https://github.com/RicardoNiepel/Azure-PlantUML)
 
-![vscode](media/animation.gif)
+![vscode](media/vscode.gif)
+
+**Table of Contents**
+- [Kubernetes-PlantUML](#kubernetes-plantuml)
+  - [Getting Started](#getting-started)
+  - [Examples](#examples)
+  - [Using kubernetes-PlantUML with other PlantUML files](#using-kubernetes-plantuml-with-other-plantuml-files)
+  - [List of Supported Symbols](#list-of-supported-symbols)
 
 ## Getting Started
 
@@ -28,7 +35,9 @@ TL;DR - If you're familiar with PlantUML this is what you need:
 If you're starting with PlantUML, here's what you need:
   1. VS Code with the PlantUML extension ![PlantUML](https://github.com/dcasati/better-diagrams/blob/master/images/plantUML.png)
   1. [Graphviz](https://graphviz.gitlab.io)
-  1. Copy one of the examples from: https://github.com/RicardoNiepel/Azure-PlantUML
+  1. Copy one of the examples from: https://github.com/dcasati/kubernetes-PlantUML/tree/master/samples
+
+## Examples
 
 A basic `hello world` example could look like this:
 
