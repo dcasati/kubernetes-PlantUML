@@ -5,7 +5,7 @@ hide stereotype
 
 !definelong KubernetesEntityColoring(e_stereo)
 skinparam rectangle<<e_stereo>> {
-    BackgroundColor AZURE_BG_COLOR
+    BackgroundColor KUBERNETES_BG_COLOR
     BorderColor transparent
     Shadowing false
 }
