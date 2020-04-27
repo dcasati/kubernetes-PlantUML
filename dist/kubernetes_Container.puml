@@ -1,6 +1,6 @@
-!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/kubernetes_Context.puml
+!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/dist/master/kubernetes_Context.puml
 ' uncomment the following line and comment the first to use locally
-!include kubernetes_Context.puml
+' !include kubernetes_Context.puml
 
 ' Scope: A single software system.
 ' Primary elements: Containers within the software system in scope.
