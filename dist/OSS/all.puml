@@ -6,9 +6,9 @@ bj9tYuEoVD7d-6cnNcyE3KuQqlhA6ZDmdoINqXPDbi8z_iJc8OqRc1p1FY4d1XPeOwRkhEwZUJryYOam
 F9x8X7FP4l84lNYYklnzvFOnNNLhNWyloWEC8IjgRL5PqnkVLvonTVTm0fnM-S_v2W
 }
 
-AzureEntityColoring(KubernetesPod)
-!define KubernetesPod(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesPod, KubernetesPod)
-!define KubernetesPod(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesPod, KubernetesPod)
+KubernetesEntityColoring(KubernetesPod)
+!define KubernetesPod(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesPod, KubernetesPod)
+!define KubernetesPod(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesPod, KubernetesPod)
 
 sprite $KubernetesCronjob [70x66/16z] {
 rPS5ckGy30LjoRPKzp_m3-aizHk5bckmgRxeoPJs5p60wD_js4XlZvdiFFVqnHlZlYD0cUqEbXIioq5xKd6vOSuPOTTQguoTa8QLRL7olVdfLzjIM-h61zop
@@ -19,9 +19,9 @@ s6ls_IZhSR33VMOJEWU4yy93rieo-ngBj_PKWscO1JQTQJQ9uUQ4a-uUs71RqXuzyoudZJvP1hQY9RR2
 jWCCbf6Tdg-AOhD8HT4E6Lkw2uCzNOUvmaWtJtow1NdbxbS9AmP-HQ1aB-veQf8JHhj0lpLxQYOrQUqFvry
 }
 
-AzureEntityColoring(KubernetesCronjob)
-!define KubernetesCronjob(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)
-!define KubernetesCronjob(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)
+KubernetesEntityColoring(KubernetesCronjob)
+!define KubernetesCronjob(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)
+!define KubernetesCronjob(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)
 
 sprite $KubernetesGroup [70x66/16z] {
 rPU7ikCW34LHr_t_3zxcX9d8yXBYhMVAAs4Ee1lQ-8zG045t7GSfdpiCaqyzv2ZelYFGO5iEJbpWRnTQ4bUy7PXWHV0wsdT8MSPopqE17VhW0zlmjGJAz5Ca
@@ -32,9 +32,9 @@ fdXQokZv_3_RiM2kkliMd2qa1Hf33XeBTvObrIAtBNCiUjSo5-CT2u-3l6FHxhynrd3VAvS1Bl1cgoiL
 Y2ygMuDYPiEbXSUQt7nUzT3swkanN9Cy_d6-0W
 }
 
-AzureEntityColoring(KubernetesGroup)
-!define KubernetesGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesGroup, KubernetesGroup)
-!define KubernetesGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesGroup, KubernetesGroup)
+KubernetesEntityColoring(KubernetesGroup)
+!define KubernetesGroup(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesGroup, KubernetesGroup)
+!define KubernetesGroup(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesGroup, KubernetesGroup)
 
 sprite $KubernetesPsp [70x66/16z] {
 rPO5iYmv30HbSTt_m4iU2glrxDxF6J2S8QaCGtyG2Y36jpecAVI_CKo-mJCS2thV4RZ0w0wSQF3ZGKkYupWmmOxWVRGdf9p7aYR45hrd7ulhUBuldYWqmSTd
@@ -45,9 +45,9 @@ aLyHTC7e_deu6b9vGQnlED5per_Sn_fcpudzWjoJrEVtnbLOaS8SO6DU9qSDWKzi02FKa0Oo61-inngK
 MOkm8fZPGIQSwEFfWx8F8pMJROczXMbFOeFI0UFMxkanz2JJRyxV
 }
 
-AzureEntityColoring(KubernetesPsp)
-!define KubernetesPsp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesPsp, KubernetesPsp)
-!define KubernetesPsp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesPsp, KubernetesPsp)
+KubernetesEntityColoring(KubernetesPsp)
+!define KubernetesPsp(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesPsp, KubernetesPsp)
+!define KubernetesPsp(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesPsp, KubernetesPsp)
 
 sprite $KubernetesRole [70x66/16z] {
 rPO7hkCm34JPoRd_XHT93DkqfBJjxzUq1sae3qp_4GOW-USTDqhfQnm7NteuSC4-ToGcE7s251O4qvjeOSNR0rEy8kNrQD-XzAsnVE_Xn4SOJKZS4AvaLXXp
@@ -59,9 +59,9 @@ G0vBEf52YAA824Pa8A8C8eOIEVhYfsDCL4GY8meHzqTrUzIU3knG8_0LJ9t25oXTmUSu3J2MCARaPxVk
 cYKG2eI0m6fsUPNMB2sHcSDuLaYtt7VasuxinNZcZMO9X8W1WbAH6CQpnhyv-2E9bmYzfl02epVWjw-UxxCfeN-S7m
 }
 
-AzureEntityColoring(KubernetesRole)
-!define KubernetesRole(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesRole, KubernetesRole)
-!define KubernetesRole(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesRole, KubernetesRole)
+KubernetesEntityColoring(KubernetesRole)
+!define KubernetesRole(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesRole, KubernetesRole)
+!define KubernetesRole(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesRole, KubernetesRole)
 
 sprite $KubernetesApi [70x66/16z] {
 rLU7iYCn20iT_l-7RxOaEyV88UMgNY-MXOJnvlOVGQigw6kE7IcVSrYT-9o7l1hqVOue07kBWxCMy9UDbgmLNWvCQaBm7EqhI1bZUPzdZgL2CJSE7dCuR_nM
@@ -73,9 +73,9 @@ U-tn4qh5GNN5s3ziMtX3WYmxwatWgcbOOQyb83K0nZFdcC8SPIPiPOxZcH-StIkub2jlgRQEPmZALAYs
 xe9uvWEd1Xf_GimiF52WeD0vdK5ldvxPcuxasp-E7m
 }
 
-AzureEntityColoring(KubernetesApi)
-!define KubernetesApi(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesApi, KubernetesApi)
-!define KubernetesApi(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesApi, KubernetesApi)
+KubernetesEntityColoring(KubernetesApi)
+!define KubernetesApi(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesApi, KubernetesApi)
+!define KubernetesApi(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesApi, KubernetesApi)
 
 sprite $KubernetesJob [70x66/16z] {
 rPS7Rkmm34H55P9p_mF_acW1W_10ffJwqik-NSzOhVmYEW2JOySRties0vDzZoW2FUymt31AXkeWwEEWcuFnkB265LRNrJx1MwgMl4SC2KZnIuUMYMDIYIHd
@@ -85,9 +85,9 @@ elGLLtNSOCcjkpYl9p8Gi0whhJbaj6gadkMULnl4tZuFQANrH3nQN00l40DAh8TpQv6tN4giXrCVNf4b
 0CTh-U7y1G
 }
 
-AzureEntityColoring(KubernetesJob)
-!define KubernetesJob(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesJob, KubernetesJob)
-!define KubernetesJob(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesJob, KubernetesJob)
+KubernetesEntityColoring(KubernetesJob)
+!define KubernetesJob(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesJob, KubernetesJob)
+!define KubernetesJob(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesJob, KubernetesJob)
 
 sprite $KubernetesCm [70x66/16z] {
 rTU7RiCm30HGYnJ7_VyF5vagZ4jbY-bwMCKwD3nPO_j7Ee1ezOoBrFKCmqKffpbs-lcC066dCYG1pWyFMXEl72vCCHCoh_Q8r6ajjPmME8CN7pXDAY73lgw6
@@ -97,9 +97,9 @@ wtfHiH5QgMSmxAIAPcgNRYB9wvbVdDLWFRR4vb2VrFEog9O0ik7oHpTM3yTIPAIGUXZP_o9NcX8dtaUf
 1m
 }
 
-AzureEntityColoring(KubernetesCm)
-!define KubernetesCm(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCm, KubernetesCm)
-!define KubernetesCm(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCm, KubernetesCm)
+KubernetesEntityColoring(KubernetesCm)
+!define KubernetesCm(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCm, KubernetesCm)
+!define KubernetesCm(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCm, KubernetesCm)
 
 sprite $KubernetesMaster [70x66/16z] {
 rPO7Ukim38EvH1BtF_0RMMhq8NAwsxzx12O1chBy8W90wRirJhJBcna0y3uTJIp4wpKAX26lmHhWvDD6UsF3Su4vZYXxDjezxQ-AvVKwF1PKS6qUFDT84n4T
@@ -111,9 +111,9 @@ StWyz_XvL6h8Yc7h7xUjSg59bYju9RnhnMkfLp-w6qWyknp7S4ktWNQpGfbP3N6KkGCMv50WpxpXIEaM
 U1XtAX7T0dHQd5Jg7v0b7eQzLB7448n66QIXZKp84WybW96e00nfdXudTn7MPUODu_7meFQe754unEIOnW4XJw2lldjUxqsR_73-0W
 }
 
-AzureEntityColoring(KubernetesMaster)
-!define KubernetesMaster(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesMaster, KubernetesMaster)
-!define KubernetesMaster(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesMaster, KubernetesMaster)
+KubernetesEntityColoring(KubernetesMaster)
+!define KubernetesMaster(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesMaster, KubernetesMaster)
+!define KubernetesMaster(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesMaster, KubernetesMaster)
 
 sprite $KubernetesKproxy [70x66/16z] {
 rPO7Tbr124FfeFrlEEUFo_CXy4jwhdkJGMBcGVyH1Y3vfpKEfVJ3E0u_eyE1XhskaHXmUWKfBCJJHcjXu-d058z8UJRQ-vI-50jGHfABphEnfD8DQV9xy7dN
@@ -125,9 +125,9 @@ m_7KvhXi7g_1ks_FezJ1w_X-iLlYIVBEwgw1voWQyGyLzrEKgmJSkL9KgnJG501IBPvXg3H2SKC5HMK2
 Zeh4hW9Elk9P442Zk73aJaV-qP5v2k1YBPu1WoL2ZueTTmCuxgO25W1LYsSFQeyyj3axatTLL6gvV5uzKKPFm2-TdXt7JWdzutm3
 }
 
-AzureEntityColoring(KubernetesKproxy)
-!define KubernetesKproxy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
-!define KubernetesKproxy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
+KubernetesEntityColoring(KubernetesKproxy)
+!define KubernetesKproxy(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
+!define KubernetesKproxy(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
 
 sprite $KubernetesCrd [70x66/16z] {
 rPTNegKm34DltBN_1K-lE7RArAS_sY6MaO7N6v80yF6hZCyAlcSelkkICmmFoJd3CP4UCIXGoBQDva2ZlOOnLdBQRMsluAEsm9ZO6yvMMoWzDul6UtEYOohQ
@@ -137,9 +137,9 @@ FmeAJoQQbgaTnLYN2SNhk55QJ4MHAYZveF9dwVTbysUbuAQCtkYPji25SjnmBYq6SYtdlElyqzrfSuvf
 r0xtccAqQayLXU5WKq6ko0_-Zvo8OGeOiN9gJoCzV_0t_t3svtkVgFF_wd6SddDlWbx_kTu3
 }
 
-AzureEntityColoring(KubernetesCrd)
-!define KubernetesCrd(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCrd, KubernetesCrd)
-!define KubernetesCrd(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCrd, KubernetesCrd)
+KubernetesEntityColoring(KubernetesCrd)
+!define KubernetesCrd(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCrd, KubernetesCrd)
+!define KubernetesCrd(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCrd, KubernetesCrd)
 
 sprite $KubernetesDs [70x66/16z] {
 rTO7pXmX38PX5ro--nyu3Gdfdp41f-THMxLt5rlB3Fr71e3WdsrCgVJ33DDFTDZnCFgDGC6eGn8RpdH94plN2rESX9nNUoErjPP-XmCTzU83RN8JyV5LVFiq
@@ -149,9 +149,9 @@ X9-hQBiIddXo-aggIWsbzHq_Nq7ZH2Nv9HNzTRzb_6pb_Q1NslB3cqDYITy9r4PnIxbjrHcldW7Sd4iM
 8QeE5IbIj15uS46okmBZk9xzecm0widgnNhsoWhWW-lrrEHz8d9tWBDUJssyfZiyLSIgzUmPBZ2T18w4pX87Wovm-z_JdqqA_UC-0m
 }
 
-AzureEntityColoring(KubernetesDs)
-!define KubernetesDs(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesDs, KubernetesDs)
-!define KubernetesDs(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesDs, KubernetesDs)
+KubernetesEntityColoring(KubernetesDs)
+!define KubernetesDs(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesDs, KubernetesDs)
+!define KubernetesDs(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesDs, KubernetesDs)
 
 sprite $KubernetesSc [70x66/16z] {
 rTK7beCu40JGpbrr_mllMlOR38YHmyO_ERWUg5f8_aU2PElN6GDSFfOSlidHua6ydz6SI7c7WHTAvKKENdcvCETAsxhQLy2NjNoNeysLTV7dZAwgJ20pgme4
@@ -163,9 +163,9 @@ bImLKN0Jqss1SXL1oO3MWJy_M_HvvWRZ0OZCS7UsZSbbFsRt0F8a-27PANv4PG_yWCiHtvToednNouJp
 Y-fGA1Rr7DaXeqXhJrOiwxdU2d2p69-nhETOr9hAIdF9P0rS294rVNltlBysCFcF-mC
 }
 
-AzureEntityColoring(KubernetesSc)
-!define KubernetesSc(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSc, KubernetesSc)
-!define KubernetesSc(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSc, KubernetesSc)
+KubernetesEntityColoring(KubernetesSc)
+!define KubernetesSc(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSc, KubernetesSc)
+!define KubernetesSc(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSc, KubernetesSc)
 
 sprite $KubernetesCrb [70x66/16z] {
 rPTdpYOX38E7G8hlV-0jR1a9os_9rk_vZGp4CUNwG2m0ENvPOrFpQkEuQUgCmC5wNoC1ngzti88WNYxqB2XUDcpY6MclMQjXmxGjVHssHQEDJxoDTKIOqww1
@@ -175,9 +175,9 @@ XL-4mjZ1wAXhiEYKQX17O5iKFGex_EwNHx_2ypffNQ_4W6QeCukPa5pI7iPn46QEvQCkDokI5kGnsIXO
 ogsIy4dsQ1PNDm3pQSNsQBpJ-4nsVZHCDRvNp7WZFTtQb5t_EPy1
 }
 
-AzureEntityColoring(KubernetesCrb)
-!define KubernetesCrb(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCrb, KubernetesCrb)
-!define KubernetesCrb(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCrb, KubernetesCrb)
+KubernetesEntityColoring(KubernetesCrb)
+!define KubernetesCrb(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCrb, KubernetesCrb)
+!define KubernetesCrb(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCrb, KubernetesCrb)
 
 sprite $KubernetesSched [70x66/16z] {
 rLO7agnA3CEosxRkV-5VCDHsRPSOXl-oDeSH2cx3zWyXI9RzCCU1zl_FCJZnFtaikI2USnG5nYCED2-G7mVjpIjyN9Zp3eNxQZz1-wDQdlFeMbYXkNNncYEn
@@ -189,9 +189,9 @@ mkEpnqyXLVeLYdL-EhRA1IswNC67qAwD4bW4-aq3JeL5Oq7LetiSW9C15BUnVowuz_uvCFalK9m2ij9P
 i3fPUB1KLVN-FKGzUh0wo1W9jd7ZwQLoEjBrh4SX0EzNkY0hMDY_J_XmNOykIaCbgr6y1RPxD6yGsmUmnwVdUJQDxI_7Vm
 }
 
-AzureEntityColoring(KubernetesSched)
-!define KubernetesSched(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSched, KubernetesSched)
-!define KubernetesSched(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSched, KubernetesSched)
+KubernetesEntityColoring(KubernetesSched)
+!define KubernetesSched(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSched, KubernetesSched)
+!define KubernetesSched(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSched, KubernetesSched)
 
 sprite $KubernetesLimits [70x66/16z] {
 rTVNGlCm38PX3Mjyzt_1Z2udhKngvv_F2Vi5v46W_qW347owSP5AompTOeSTJzfy8r0mcY690MTwaoP6tbumnP6GuwLzH-h4ignqE32bKI4mJOh80gOznat6
@@ -201,9 +201,9 @@ LjnIwHuNRj_y-deyFKXa-TWWM9MqqR2eM8Np3rE91Lgim3IZ5umjHlC-Ga4b3X_T2NlcnVAKR5Tf4QhI
 HBDhfObbiJo5dof8OtzQdfhyK6c0jV7oL4T1q28Lq8HvAfpT-dIJ3jZ2nYy43WaToyb_hseySNfMPvD2_xXF
 }
 
-AzureEntityColoring(KubernetesLimits)
-!define KubernetesLimits(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesLimits, KubernetesLimits)
-!define KubernetesLimits(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesLimits, KubernetesLimits)
+KubernetesEntityColoring(KubernetesLimits)
+!define KubernetesLimits(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesLimits, KubernetesLimits)
+!define KubernetesLimits(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesLimits, KubernetesLimits)
 
 sprite $KubernetesQuota [70x66/16z] {
 rPU9SdCh38Fn0hRU_uNld1ocJAnGalllN_T2XP4S9st_40uWvCSrBjBQ_wPZyJzrPA3Wdsi4mFJs2Pe04c36sqPR0c5DmBmTc07eZvs1ruI-5wtTUj51K63x
@@ -215,9 +215,9 @@ DisMcHmMor_QGiPWeINsvU_Y-I_ijIsTN62LmLraRCl2ohCjdyGJ2cItbtxYF8Hi0TrHdiy9Lh6TYfKz
 AF4SWkgEBT9En5b5svd40Mzl81y_UavDpAIslvp_
 }
 
-AzureEntityColoring(KubernetesQuota)
-!define KubernetesQuota(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesQuota, KubernetesQuota)
-!define KubernetesQuota(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesQuota, KubernetesQuota)
+KubernetesEntityColoring(KubernetesQuota)
+!define KubernetesQuota(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesQuota, KubernetesQuota)
+!define KubernetesQuota(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesQuota, KubernetesQuota)
 
 sprite $KubernetesVol [70x66/16z] {
 rPS5ikOm38CDYMtT_y3Bb8uApZxyXdxKD5AgElA9601I_rlZ1-MopSGlzdKqS63qDHA4AHsiS48yDjeBPpmEp757sdsqJoXlnTBNqKG77doYZJ6HFYehYXs2
@@ -227,9 +227,9 @@ _XDoC_OnKdLj1csf_QUZOPSYGs6VbvuyzXrsEO8-KrRkW_B4aUoFxXua7iR4WP70Y7At92foGc8b792o
 jiv7De5oyyH87WzdTZS-9_id6aOrZrSSRTyzVM_Av8Fp5G
 }
 
-AzureEntityColoring(KubernetesVol)
-!define KubernetesVol(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesVol, KubernetesVol)
-!define KubernetesVol(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesVol, KubernetesVol)
+KubernetesEntityColoring(KubernetesVol)
+!define KubernetesVol(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesVol, KubernetesVol)
+!define KubernetesVol(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesVol, KubernetesVol)
 
 sprite $KubernetesSa [70x66/16z] {
 rPPNWYGn24CRC47tF_36YHwfmkPzVnrABf2H_VYFM03QVbhZ6nC_hf5uuiTrhB2nxciq27bBmmU2kjpe62Wk6nOue_s2jHfjcBRblews1Ub1Vb36DrqoxPjd
@@ -240,9 +240,9 @@ aNkB3DU1OY29nmxka-IQXBlqpQkxi8UIf73tGhipd_L9ir41B6GZuzGURTHO530PxiGU2NOg35PJVcwF
 A9LBvzZjwRdVc_77Fyvd
 }
 
-AzureEntityColoring(KubernetesSa)
-!define KubernetesSa(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSa, KubernetesSa)
-!define KubernetesSa(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSa, KubernetesSa)
+KubernetesEntityColoring(KubernetesSa)
+!define KubernetesSa(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSa, KubernetesSa)
+!define KubernetesSa(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSa, KubernetesSa)
 
 sprite $KubernetesKubelet [70x66/16z] {
 rPQ9ZkH824Iv8Vx_W_TmMwALWdLvhvbvElgeh10PWJ7q2s40al-nnaKf_MqSpT_KuS21lTT833YzGGeByR7HMjZuE3354odFqNv2wQjOW3AId7HUn99VX-MG
@@ -254,9 +254,9 @@ E1mVROxBvl4ENdnxXT89tkFxO0_hOrBJxti0tPQkVOuB_NlYbkju9XotIYhaAefT9L6gMk24YGIKhEDP
 0gU96VkjehG3m5djKCdC1ATPPbPAnxCWboyIe88gE102JgJVDx9AwNWs3E4eAMTrWzpkYYIqO2A64aNH0_wcyNSIZmWzKtZ0w0FuzTFptfiI-idv7G
 }
 
-AzureEntityColoring(KubernetesKubelet)
-!define KubernetesKubelet(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesKubelet, KubernetesKubelet)
-!define KubernetesKubelet(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesKubelet, KubernetesKubelet)
+KubernetesEntityColoring(KubernetesKubelet)
+!define KubernetesKubelet(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesKubelet, KubernetesKubelet)
+!define KubernetesKubelet(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesKubelet, KubernetesKubelet)
 
 sprite $KubernetesPvc [70x66/16z] {
 rTS7SgL030HGPQdlV-1Du20O_i1iVfKSkx1IOVgF683adytObD8onsuzXmC7zZmZCU3qX1Gk1DDDMhXoks6AcPHvQ-yeVT2MbHnEpCmRdtXCLaCwfewn8gXJ
@@ -267,9 +267,9 @@ QCTO5_HEiAhwI-6YN_tciLvXfICyvzIiDIffG5VRqpcQD1M39g1P8ee3kf27UIf8kA4Oah2uRazNBKK0
 2a02E5Itxl_t6uehJ3CvJn6QAqmOtS2FjsVCSQs4_d5V0G
 }
 
-AzureEntityColoring(KubernetesPvc)
-!define KubernetesPvc(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesPvc, KubernetesPvc)
-!define KubernetesPvc(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesPvc, KubernetesPvc)
+KubernetesEntityColoring(KubernetesPvc)
+!define KubernetesPvc(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesPvc, KubernetesPvc)
+!define KubernetesPvc(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesPvc, KubernetesPvc)
 
 sprite $KubernetesCcm [70x66/16z] {
 rLS7ikmm25l01dJ_2_z96yyoSjhlUcLJjI1XGZx_4Hg0a9_cM97sdgDZu2MFE0hQSuu0GN_4eOa9_BRGbfZXjc66AuJUjVOSQOziUSx3RK4qpisDvnok2ty7
@@ -281,9 +281,9 @@ ztlZ9mkL6qKYPlfnsS8BadXPWOVWMGkU8jwDxjoUkO-XshuthAk6QN1x-Cmh2OjZmzUD3ZEuKNkuKR6A
 HrpTH7UaSNkuKHnpPUT6pQ6VQoG87hzNo-FLyroRrCy_ZXy
 }
 
-AzureEntityColoring(KubernetesCcm)
-!define KubernetesCcm(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCcm, KubernetesCcm)
-!define KubernetesCcm(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCcm, KubernetesCcm)
+KubernetesEntityColoring(KubernetesCcm)
+!define KubernetesCcm(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCcm, KubernetesCcm)
+!define KubernetesCcm(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCcm, KubernetesCcm)
 
 sprite $KubernetesSts [70x66/16z] {
 rTO7bgD030HGnPRg_XTUreH-o4sROJR-5oQwi4iYq7z44qZvPWPMgVIO0PtH8ms5qrTnmq3ZBsK4BiJj74bCXDmTxLpglT5-ByTncqt7SfzFrwFB5m2vst-B
@@ -295,9 +295,9 @@ pLQ2CGkCtNnwJnLfZIHSH6VZcGxA3UcG006UWyKV2vm4MmCaeF8MubHC1jLK8064SvJ5d-1pHW04YJJ0
 UJUfz8_x0G
 }
 
-AzureEntityColoring(KubernetesSts)
-!define KubernetesSts(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSts, KubernetesSts)
-!define KubernetesSts(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSts, KubernetesSts)
+KubernetesEntityColoring(KubernetesSts)
+!define KubernetesSts(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSts, KubernetesSts)
+!define KubernetesSts(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSts, KubernetesSts)
 
 sprite $KubernetesNetpol [70x66/16z] {
 rPS5bYCn34HjSTt_m4ETSR9wKjFo7uRyPrUfQVn7202VF-lO2BxlK2pkUgOX8TSTZWAzvA10WvqEcWCTfmjZ7E5qjjfzWWzhkU_fQsaoweftP5neqxFLBcea
@@ -308,9 +308,9 @@ fghc07gBvBDKJs-nTW2EykRcP2yunks1vsGNXblayGpSW4S6rz6aE5iKWh3m2xVkb0xKL4__KEN2n80I
 oWXWKn8X-RHCGDaOC5uM7ZqF2tzPsDtZOR5asNrgenUB4w1HxyXFF1-v0E9G8W68d5xIfLHFMrJ6gHly7Z-sq3WcBfmZUkR5ewVFfYTe_EEy0m
 }
 
-AzureEntityColoring(KubernetesNetpol)
-!define KubernetesNetpol(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesNetpol, KubernetesNetpol)
-!define KubernetesNetpol(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesNetpol, KubernetesNetpol)
+KubernetesEntityColoring(KubernetesNetpol)
+!define KubernetesNetpol(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesNetpol, KubernetesNetpol)
+!define KubernetesNetpol(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesNetpol, KubernetesNetpol)
 
 sprite $KubernetesCrole [70x66/16z] {
 rPS5UZCn34JNuhd_WN_imkTOMgNSLwPNUoOnR3y80U3ZpOv_1B_UeTXvjMSO9kHvXsE1FkMWG8ArW-P0HhimnXrEtMfhWbkrlDup75touXrFGvMapvYdWzTW
@@ -321,9 +321,9 @@ f5CzzS6P7680R0J8u0DiJW3Pgfwig3rhOs2BlsziIY8aPpqvfONTFP9wbgT4CeZ2_bckCzBOwocHIxf1
 WhPlpcy
 }
 
-AzureEntityColoring(KubernetesCrole)
-!define KubernetesCrole(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCrole, KubernetesCrole)
-!define KubernetesCrole(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCrole, KubernetesCrole)
+KubernetesEntityColoring(KubernetesCrole)
+!define KubernetesCrole(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCrole, KubernetesCrole)
+!define KubernetesCrole(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCrole, KubernetesCrole)
 
 sprite $KubernetesRs [70x66/16z] {
 rPS5bcCn30GjoOA-_u6NF1IdFsXvAaoLvvPnV28cW9HVTIpAna_ZMFo2Hm8Ri-z847nqqC81SJjeAnnnks26ArAlItk7ibPP-Xv9TE25JxHH9kaZUtFmJCpl
@@ -333,9 +333,9 @@ NxQyprJQiD01jZvb5WuewwDVjMZ7uZZ0Vi6o_MR-gcKRZ0qB-KdTiWGeaynI5OU04cGDQ5DaKzY7DFhN
 2KrayF9m2XifWCjCLfvZi94Ae5ozTMfJOfc5C5QUO-QUBX2gchGyntYtutEoUwBXLFDunP7swEbdKph-Sxu2
 }
 
-AzureEntityColoring(KubernetesRs)
-!define KubernetesRs(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesRs, KubernetesRs)
-!define KubernetesRs(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesRs, KubernetesRs)
+KubernetesEntityColoring(KubernetesRs)
+!define KubernetesRs(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesRs, KubernetesRs)
+!define KubernetesRs(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesRs, KubernetesRs)
 
 sprite $KubernetesNode [70x66/16z] {
 rPO7abin34DPn8BxNpZZDjfLeCW_VPzxWoc0AlA5601AVrtZHhlyD84RlwIZYOLnNQD02Bc2DJRasqPxOyVRWJbEb9sZVOVsIx40FSIAwLo8fLnk697dmTSF
@@ -347,9 +347,9 @@ uNphv4XE7jTHujjbN5PmdU0B-nxsQLq-kWkFvn2aXrcYtQtGvY70xJcDPzzKDb063vJ24oaOWLOUppOe
 F4OqU3pRBX-5DhIR5yeixiyjIJoKkDhudC8HapED0qFUG2_FdklUjCb_pZS
 }
 
-AzureEntityColoring(KubernetesNode)
-!define KubernetesNode(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesNode, KubernetesNode)
-!define KubernetesNode(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesNode, KubernetesNode)
+KubernetesEntityColoring(KubernetesNode)
+!define KubernetesNode(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesNode, KubernetesNode)
+!define KubernetesNode(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesNode, KubernetesNode)
 
 sprite $KubernetesSecret [70x66/16z] {
 rPS75YCX34EnmRPq_mjlsCPxCKucpDQVtaIGJ6l_4ODao7sD2NexnhWur17d4-DpZU06Qv-WO85VDhg35PS3wtn7w8LeBu1-APPp7GbUfGu--35w8f9vZaju
@@ -360,9 +360,9 @@ Aki6OWpdl0-w3z2wCQGZnLFiUSU03OgZEyL3OgXJ3TqWNiIJWp8DCiJTDEIRBD7SJQYHuwc2yYuUOWz2
 KADfbvZtYgaoNpgxHegd2We0IO8_xjSJ96UtnCc99eE3uzNdGy7QDOmrqFQFymK
 }
 
-AzureEntityColoring(KubernetesSecret)
-!define KubernetesSecret(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSecret, KubernetesSecret)
-!define KubernetesSecret(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSecret, KubernetesSecret)
+KubernetesEntityColoring(KubernetesSecret)
+!define KubernetesSecret(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSecret, KubernetesSecret)
+!define KubernetesSecret(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSecret, KubernetesSecret)
 
 sprite $KubernetesNs [70x66/16z] {
 rPS7aYmn24DjOn2w_uL_RTwXh9gcVtuR9gl6GgRn-8_O935_NkE5j74RvpltTMQmiFiQu04V7LPI49UDjgJYSi6Cpy2wKDeBfBNAqjUPO0DHUB3D4Y9DPbqE
@@ -372,9 +372,9 @@ DbDt_2wRtTGTOuV3YZB9VF_ty2X6YCaXQnZVhckpNjSo3hdOeal12VUWksUwlpx2nwFGOyFYNL8CXJr-
 iE2JdBcTwK_BemlbHYvWxZYKHrDLDhb0XbddrBPEAWvctMgTyr4uQS1QImmA2ky4NuFEYKQJZUELPhPtJz-RNECVvmS
 }
 
-AzureEntityColoring(KubernetesNs)
-!define KubernetesNs(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesNs, KubernetesNs)
-!define KubernetesNs(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesNs, KubernetesNs)
+KubernetesEntityColoring(KubernetesNs)
+!define KubernetesNs(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesNs, KubernetesNs)
+!define KubernetesNs(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesNs, KubernetesNs)
 
 sprite $KubernetesDeploy [70x66/16z] {
 rPPNWYqv24DDCcZ_2-uSAJ0ry_BvwgXh90nU_n0AmEd7DPu9MVyRmoV_KuSs4lhVDHm5jluB76ZOjusMGCVjm0GJpdEqTmWPO_an7N9CpC6N6k4UQE4R8gvl
@@ -385,9 +385,9 @@ CnJu-7HV-8hQ44ynbPt55a9476h26shOp0hTmCVz71vSl64BQWY2C6A5Mb10p1cWgEF9GQr0B92ehX03
 0iGGH2cU4drpbn72l24gRB3zwYuWckAfIPbA-fuYErlZ1vLDE-tRbfZdqWrel3ttCFG4hx-SHm
 }
 
-AzureEntityColoring(KubernetesDeploy)
-!define KubernetesDeploy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesDeploy, KubernetesDeploy)
-!define KubernetesDeploy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesDeploy, KubernetesDeploy)
+KubernetesEntityColoring(KubernetesDeploy)
+!define KubernetesDeploy(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesDeploy, KubernetesDeploy)
+!define KubernetesDeploy(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesDeploy, KubernetesDeploy)
 
 sprite $KubernetesUser [70x66/16z] {
 rPT70ben30NLfNV_0wSdfaZnDwJEZZQsAa3_4GOW-Nq709JIopWMBteuy82TEn8DJYT8OI2OBgA5YSi5K-n8sPVs2gL7PJdtSEA4ll0_71N-KzPXCak2TWY-
@@ -397,9 +397,9 @@ e6cxVCyYpwlkt6BzrjbZ_QboT1d1eXhxuMyf0CsMFeVfdi8BA3s2Sxmhtob93OepQl-d2f600QuEb5a0
 QNcq89GZsTq3r9IdHsujHGWWkHYekhFanK5BDcMuc3XSb1CqbsSkL1KAg2e0A03LPxOdiKLeJs63qGNuU7fw73Cbz8_p4G
 }
 
-AzureEntityColoring(KubernetesUser)
-!define KubernetesUser(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesUser, KubernetesUser)
-!define KubernetesUser(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesUser, KubernetesUser)
+KubernetesEntityColoring(KubernetesUser)
+!define KubernetesUser(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesUser, KubernetesUser)
+!define KubernetesUser(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesUser, KubernetesUser)
 
 sprite $KubernetesPv [70x66/16z] {
 rTS7ZkKm30DGgultF_3sQj3mLxREczw8iGKpoNf37439BsTyqhOU2tptC4SI6vzd58XO4zeuI5aliiR9omCpt9JUH_kAjj5OvZbIcE23Bumf2vcJVJbu8jby
@@ -409,9 +409,9 @@ jK0tnacuUbHr0_Zohj9Do4Hvj_YwuWSIlv9YP5lcAKKQQfu2rb3p5BRbynJxBId96gfbUXNc3PKwkwCu
 sueeMJTrJz5rryF7Aqx6fuSBdBMk_znx
 }
 
-AzureEntityColoring(KubernetesPv)
-!define KubernetesPv(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesPv, KubernetesPv)
-!define KubernetesPv(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesPv, KubernetesPv)
+KubernetesEntityColoring(KubernetesPv)
+!define KubernetesPv(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesPv, KubernetesPv)
+!define KubernetesPv(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesPv, KubernetesPv)
 
 sprite $KubernetesEp [70x66/16z] {
 rPU7pYOX24ML8jptV-1jvb-oHE8Csq_AL-T4kTRn7o40RFwiO-CysYY2fcSk9EIzmt10nnl8KR0U5veT5Oy3OzmmkaVx1EThB2rF7KjD7RpXDTIJP79S4ncd
@@ -421,9 +421,9 @@ dDUQrA6cXNw9XNzTM-INr6NOprae7kXR9AzIS0hsoliT0w3nKGwx8w6BfqDXZyl9etUOSZJWaUbjhvc9
 J1C1U5tZ2R95pSoJfOgdd0eYW9nwPA_kHqAa46RIMppteBIgR8tTBJJkUEjwbPclPa-DeiPf_EDy1W
 }
 
-AzureEntityColoring(KubernetesEp)
-!define KubernetesEp(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesEp, KubernetesEp)
-!define KubernetesEp(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesEp, KubernetesEp)
+KubernetesEntityColoring(KubernetesEp)
+!define KubernetesEp(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesEp, KubernetesEp)
+!define KubernetesEp(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesEp, KubernetesEp)
 
 sprite $KubernetesSvc [70x66/16z] {
 rPS7aYCn30CPHUB_7xvyOx6irOYRkv9ZbmqeqZV200I_te6Vf58RnqNJmmC5EtS4dk1qWYGM3AQRQ6B5xS8KEqBsrTuXzQ2MZeS3E_R51uwHdgHIws9KaYk6
@@ -433,9 +433,9 @@ GPSiXy8UcvD7xp2LQA1KmJbEL66S4lG4xTLJSSmC4OKae1aYXW8j24mGCC8SmU24nhAU5ujIyKG8p9Et
 0PHqapPuO-3tRZX2Ux9rlQhmmUpfPfD2NvmV
 }
 
-AzureEntityColoring(KubernetesSvc)
-!define KubernetesSvc(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSvc, KubernetesSvc)
-!define KubernetesSvc(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSvc, KubernetesSvc)
+KubernetesEntityColoring(KubernetesSvc)
+!define KubernetesSvc(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesSvc, KubernetesSvc)
+!define KubernetesSvc(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesSvc, KubernetesSvc)
 
 sprite $KubernetesRb [70x66/16z] {
 rTU7hkmW30JGCSPb_l-7dzA44iYziAyVbUspO9C2_YELPCZFPXnIyJ5Zys6EE1_gUaPmmB2Y95-uO98ctqmtJFcTA1EjdP2wr9Rr70akgHWuCbGpL2jDrQaY
@@ -447,9 +447,9 @@ eJFDd6wMQMOCixXU-V7Ah3_JdPmV4TmbFw1uuZf3H_Z2-29MRjqbEPGOCdOYB2NCE80NmISJIr5NVMzF
 QazZtGr_C6AoiatmMmNVoyNjrPWi7prZndTPy8_x0G
 }
 
-AzureEntityColoring(KubernetesRb)
-!define KubernetesRb(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesRb, KubernetesRb)
-!define KubernetesRb(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesRb, KubernetesRb)
+KubernetesEntityColoring(KubernetesRb)
+!define KubernetesRb(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesRb, KubernetesRb)
+!define KubernetesRb(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesRb, KubernetesRb)
 
 sprite $KubernetesEtcd [70x66/16z] {
 rLO93Yix20jRWFjV-6kKKJHrGMd_swsbQmpOWM7yGz3CTFfHZeMG_yzXkV03F3GJeDzpU1QmhpWuii7yM6Y9xF2nOP8dE9-j_GGXHrj-WAUr9LqBxjRuccFo
@@ -461,9 +461,9 @@ UOHFusxzx3QFVctZyp8LYV09YC9BH7uF6s-Wyo4GrpzUtQUsB35Am9z4s8DefZ176ejOPq-_ywfbK9gc
 W5yhqhiY5wTCCh2dXJxKPPxfP9UwdigYrjlJ6zM3nWcUH_0u8_807H-0lkwUxxK97dyv_WC
 }
 
-AzureEntityColoring(KubernetesEtcd)
-!define KubernetesEtcd(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesEtcd, KubernetesEtcd)
-!define KubernetesEtcd(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesEtcd, KubernetesEtcd)
+KubernetesEntityColoring(KubernetesEtcd)
+!define KubernetesEtcd(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesEtcd, KubernetesEtcd)
+!define KubernetesEtcd(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesEtcd, KubernetesEtcd)
 
 sprite $KubernetesIng [70x66/16z] {
 rPM7ijqm24Gle0B__yE9PvmnrZ4ZfoSdzTsobdOfd_-85X5JVbxZmEt7DNgS_BYEZ5Xetwyn8qZ_BWtrA1YlZJQFYjU1MUoO-YRQ6aTW-rY8DGRFM7ROwNiT
@@ -474,9 +474,9 @@ WQzZnAaoRjScuXXJ0fM632fx1tO0IXwB6WznlZp7ITpnRt2JmF8zt2G2oxTmaz3uboh6Zij807Eez6LM
 5GuLE_vkFK87Z2xPgp0UeeygtTAD60zfgxiHRHxkwYOU10MyHuXld4LGm5GxHmLXK3Nj0uW4OJnxUjIuVlvnlW
 }
 
-AzureEntityColoring(KubernetesIng)
-!define KubernetesIng(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesIng, KubernetesIng)
-!define KubernetesIng(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesIng, KubernetesIng)
+KubernetesEntityColoring(KubernetesIng)
+!define KubernetesIng(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesIng, KubernetesIng)
+!define KubernetesIng(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesIng, KubernetesIng)
 
 sprite $KubernetesHpa [70x66/16z] {
 rPQ7pgOw34HTuZBl_y2tRFx5IlX2tNhKAKVWiGReBw8127xhwAJIOmp5Gmyx9jfzH-03HdUGn09dkeWcLbmEJ756o7cqLqWzZUMTXmDdd0SVk8syaHHC8umD
@@ -487,7 +487,7 @@ FKjRM1OivaBnpYBKoJUMDhJKHjWnZc8eDy5JSgoRXopAxTtFLE81IZEumJfDneG6Zeahl-uID-8fRBAO
 JVaadcAmH5dKClWada9sblv6d6Xy5a_HiD42AT2cud1H5rl4SnuKr1UBVqoSMuJEIPpGw0ACOuokOLYJGdyu_m8
 }
 
-AzureEntityColoring(KubernetesHpa)
-!define KubernetesHpa(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesHpa, KubernetesHpa)
-!define KubernetesHpa(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesHpa, KubernetesHpa)
+KubernetesEntityColoring(KubernetesHpa)
+!define KubernetesHpa(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesHpa, KubernetesHpa)
+!define KubernetesHpa(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesHpa, KubernetesHpa)
 

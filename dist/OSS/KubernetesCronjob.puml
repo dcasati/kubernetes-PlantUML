@@ -7,6 +7,6 @@ s6ls_IZhSR33VMOJEWU4yy93rieo-ngBj_PKWscO1JQTQJQ9uUQ4a-uUs71RqXuzyoudZJvP1hQY9RR2
 jWCCbf6Tdg-AOhD8HT4E6Lkw2uCzNOUvmaWtJtow1NdbxbS9AmP-HQ1aB-veQf8JHhj0lpLxQYOrQUqFvry
 }
 
-AzureEntityColoring(KubernetesCronjob)
-!define KubernetesCronjob(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)
-!define KubernetesCronjob(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)
+KubernetesEntityColoring(KubernetesCronjob)
+!define KubernetesCronjob(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)
+!define KubernetesCronjob(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)

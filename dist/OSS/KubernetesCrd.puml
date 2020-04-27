@@ -6,6 +6,6 @@ FmeAJoQQbgaTnLYN2SNhk55QJ4MHAYZveF9dwVTbysUbuAQCtkYPji25SjnmBYq6SYtdlElyqzrfSuvf
 r0xtccAqQayLXU5WKq6ko0_-Zvo8OGeOiN9gJoCzV_0t_t3svtkVgFF_wd6SddDlWbx_kTu3
 }
 
-AzureEntityColoring(KubernetesCrd)
-!define KubernetesCrd(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCrd, KubernetesCrd)
-!define KubernetesCrd(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCrd, KubernetesCrd)
+KubernetesEntityColoring(KubernetesCrd)
+!define KubernetesCrd(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCrd, KubernetesCrd)
+!define KubernetesCrd(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCrd, KubernetesCrd)

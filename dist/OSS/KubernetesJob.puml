@@ -6,6 +6,6 @@ elGLLtNSOCcjkpYl9p8Gi0whhJbaj6gadkMULnl4tZuFQANrH3nQN00l40DAh8TpQv6tN4giXrCVNf4b
 0CTh-U7y1G
 }
 
-AzureEntityColoring(KubernetesJob)
-!define KubernetesJob(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesJob, KubernetesJob)
-!define KubernetesJob(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesJob, KubernetesJob)
+KubernetesEntityColoring(KubernetesJob)
+!define KubernetesJob(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesJob, KubernetesJob)
+!define KubernetesJob(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesJob, KubernetesJob)

@@ -6,6 +6,6 @@ LjnIwHuNRj_y-deyFKXa-TWWM9MqqR2eM8Np3rE91Lgim3IZ5umjHlC-Ga4b3X_T2NlcnVAKR5Tf4QhI
 HBDhfObbiJo5dof8OtzQdfhyK6c0jV7oL4T1q28Lq8HvAfpT-dIJ3jZ2nYy43WaToyb_hseySNfMPvD2_xXF
 }
 
-AzureEntityColoring(KubernetesLimits)
-!define KubernetesLimits(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesLimits, KubernetesLimits)
-!define KubernetesLimits(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesLimits, KubernetesLimits)
+KubernetesEntityColoring(KubernetesLimits)
+!define KubernetesLimits(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesLimits, KubernetesLimits)
+!define KubernetesLimits(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesLimits, KubernetesLimits)

@@ -8,6 +8,6 @@ m_7KvhXi7g_1ks_FezJ1w_X-iLlYIVBEwgw1voWQyGyLzrEKgmJSkL9KgnJG501IBPvXg3H2SKC5HMK2
 Zeh4hW9Elk9P442Zk73aJaV-qP5v2k1YBPu1WoL2ZueTTmCuxgO25W1LYsSFQeyyj3axatTLL6gvV5uzKKPFm2-TdXt7JWdzutm3
 }
 
-AzureEntityColoring(KubernetesKproxy)
-!define KubernetesKproxy(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
-!define KubernetesKproxy(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
+KubernetesEntityColoring(KubernetesKproxy)
+!define KubernetesKproxy(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
+!define KubernetesKproxy(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
