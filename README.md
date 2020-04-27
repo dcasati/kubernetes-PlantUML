@@ -1,9 +1,9 @@
 # Kubernetes-PlantUML
 
 These are the PlantUML sprites, macros and stereotypes for creating PlantUML diagrams with the Kubernetes components.
-The official Kubernetes Icons Set (where this work is based) can be found ![here](https://github.com/kubernetes/community/tree/master/icons)
+The official Kubernetes Icons Set (where this work is based) can be found [here](https://github.com/kubernetes/community/tree/master/icons)
 
-This repo is heavily influenced by the awesome work from Ricardo Niepel on ![Azure-PlantUML](https://github.com/RicardoNiepel/Azure-PlantUML)
+This repo is heavily influenced by the awesome work from Ricardo Niepel on [Azure-PlantUML](https://github.com/RicardoNiepel/Azure-PlantUML)
 
 ![vscode](media/animation.gif)
 
@@ -26,7 +26,9 @@ TL;DR - If you're familiar with PlantUML this is what you need:
 ```
 
 If you're starting with PlantUML, here's what you need:
-
+  1. VS Code with the PlantUML extension ![PlantUML](https://github.com/dcasati/better-diagrams/blob/master/images/plantUML.png)
+  1. [Graphviz](https://graphviz.gitlab.io)
+  1. Copy one of the examples from: https://github.com/RicardoNiepel/Azure-PlantUML
 
 A basic `hello world` example could look like this:
 
@@ -141,6 +143,114 @@ Rel_U(rs,pod3," ")
 
 Rel_U(deploy,rs, " ")
 Rel_U(hpa,deploy, " ")
+
+@enduml
+```
+
+## Using kubernetes-PlantUML with other PlantUML files
+
+You can certainly mix and match the stencils from kubernetes-PlantUML with other PlantUML files. For instance, 
+here is an example of using it with the Azure-PlantUML files to ilustrate this reference architecture ![microservices](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/microservices/aks)
+
+![microsoervices-diagram](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/microservices/_images/aks.png)
+
+The equivalent of that in PlantUML would look like this:
+
+![microservices-plantuml](media/microservices-azure-aks.png)
+
+```vim
+@startuml kubernetes
+
+footer Kubernetes Plant-UML
+scale max 1024 width
+
+skinparam nodesep 10
+skinparam ranksep 10
+
+' Azure
+!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureSimplified.puml
+
+!includeurl AzurePuml/Compute/AzureAppService.puml
+!includeurl AzurePuml/Compute/AzureBatch.puml
+!includeurl AzurePuml/Containers/AzureContainerRegistry.puml
+!includeurl AzurePuml/Containers/AzureKubernetesService.puml
+!includeurl AzurePuml/Databases/AzureDatabaseForPostgreSQL.puml
+!includeurl AzurePuml/Databases/AzureCosmosDb.puml
+!includeurl AzurePuml/Databases/AzureSqlDatabase.puml
+!includeurl AzurePuml/DevOps/AzurePipelines.puml
+!includeurl AzurePuml/Identity/AzureActiveDirectory.puml
+!includeurl AzurePuml/Networking/AzureLoadBalancer.puml
+!includeurl AzurePuml/Security/AzureKeyVault.puml
+!includeurl AzurePuml/Storage/AzureBlobStorage.puml
+!includeurl AzurePuml/Storage/AzureStorage.puml
+
+' Kubernetes
+!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
+
+!define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+
+!includeurl KubernetesPuml/OSS/KubernetesApi.puml
+!includeurl KubernetesPuml/OSS/KubernetesIng.puml
+!includeurl KubernetesPuml/OSS/KubernetesPod.puml
+
+actor "DevOps" as devopsAlias
+collections "Client Apps" as clientalias
+collections "Helm Charts" as helmalias
+
+left to right direction
+
+' Azure Components
+AzureActiveDirectory(aad, "\nAzure\nActive Directory", "Global")
+AzureContainerRegistry(acr, "ACR", "Canada Central")
+AzureCosmosDb(cosmos, "\nCosmos DB", "Global")
+AzureKeyVault(keyvault, "\nAzure\nKey Vault", "Global")
+AzureLoadBalancer(alb, "\nLoad\nBalancer", "Canada Central")
+AzureSqlDatabase(sql, "\nExternal\ndata stores", "Canada Central")
+AzurePipelines(ado, "CI/CD\nAzure Pipelines", "Global")
+
+' Kubernetes Components
+Cluster_Boundary(cluster, "Kubernetes Cluster") {
+    KubernetesApi(KubernetesApi, "Kubernetes API", "")
+    
+    Namespace_Boundary(nsFrontEnd, "Front End") {
+        KubernetesIng(ingress, "API Gateway", "")
+    }
+
+    Namespace_Boundary(nsBackEnd, "Back End") {
+        KubernetesPod(KubernetesBE1, "", "")
+        KubernetesPod(KubernetesBE2, "", "")
+        KubernetesPod(KubernetesBE3, "", "")
+    }
+
+    Namespace_Boundary(nsUtil, "Utiliy Services") {
+        KubernetesPod(KubernetesUtil1, "", "")
+        KubernetesPod(KubernetesUtil2, "","")
+    }
+}
+
+Rel(devopsAlias, aad, "AUTH")
+Rel(helmalias, KubernetesApi, "helm upgrade")
+
+Rel(aad, keyvault, " ")
+Rel(KubernetesApi, aad, "RBAC", "ASYNC")
+
+Rel(clientalias, alb, "HTTP", "ASYNC")
+Rel(alb, ingress, "HTTP", "ASYNC")
+
+Rel(ingress, KubernetesBE1, " ")
+Rel(KubernetesBE1, KubernetesBE2, " ")
+Rel(KubernetesBE1, KubernetesBE3, " ")
+
+Rel(KubernetesBE2, sql, " ")
+Rel(KubernetesBE3, keyvault, "Pod Identity")
+Rel(KubernetesBE3, cosmos, " ")
+
+Rel(ado, acr, "docker push")
+Rel_U(KubernetesApi, acr, "docker pull")
+
 
 @enduml
 ```
