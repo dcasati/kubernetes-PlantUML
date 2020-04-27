@@ -1,0 +1,130 @@
+@startuml kubernetes
+
+footer Kubernetes Plant-UML
+scale max 1024 width
+
+skinparam nodesep 10
+skinparam ranksep 10
+
+' Azure
+!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureSimplified.puml
+
+!includeurl AzurePuml/Compute/AzureAppService.puml
+!includeurl AzurePuml/Compute/AzureBatch.puml
+!includeurl AzurePuml/Containers/AzureContainerRegistry.puml
+!includeurl AzurePuml/Containers/AzureKubernetesService.puml
+!includeurl AzurePuml/Databases/AzureDatabaseForPostgreSQL.puml
+!includeurl AzurePuml/Databases/AzureCosmosDb.puml
+!includeurl AzurePuml/Databases/AzureSqlDatabase.puml
+!includeurl AzurePuml/DevOps/AzurePipelines.puml
+!includeurl AzurePuml/Identity/AzureActiveDirectory.puml
+!includeurl AzurePuml/Networking/AzureLoadBalancer.puml
+!includeurl AzurePuml/Security/AzureKeyVault.puml
+!includeurl AzurePuml/Storage/AzureBlobStorage.puml
+!includeurl AzurePuml/Storage/AzureStorage.puml
+
+' Kubernetes
+!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
+
+!define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+
+!includeurl KubernetesPuml/OSS/KubernetesApi.puml
+!includeurl KubernetesPuml/OSS/KubernetesCcm.puml
+!includeurl KubernetesPuml/OSS/KubernetesCm.puml
+!includeurl KubernetesPuml/OSS/KubernetesCm.puml
+!includeurl KubernetesPuml/OSS/KubernetesCrb.puml
+!includeurl KubernetesPuml/OSS/KubernetesCrd.puml
+!includeurl KubernetesPuml/OSS/KubernetesCrole.puml
+!includeurl KubernetesPuml/OSS/KubernetesCronjob.puml
+!includeurl KubernetesPuml/OSS/KubernetesDeploy.puml
+!includeurl KubernetesPuml/OSS/KubernetesDs.puml
+!includeurl KubernetesPuml/OSS/KubernetesEp.puml
+!includeurl KubernetesPuml/OSS/KubernetesEtcd.puml
+!includeurl KubernetesPuml/OSS/KubernetesGroup.puml
+!includeurl KubernetesPuml/OSS/KubernetesHpa.puml
+!includeurl KubernetesPuml/OSS/KubernetesIng.puml
+!includeurl KubernetesPuml/OSS/KubernetesJob.puml
+!includeurl KubernetesPuml/OSS/KubernetesKproxy.puml
+!includeurl KubernetesPuml/OSS/KubernetesKubelet.puml
+!includeurl KubernetesPuml/OSS/KubernetesLimits.puml
+!includeurl KubernetesPuml/OSS/KubernetesMaster.puml
+!includeurl KubernetesPuml/OSS/KubernetesNetpol.puml
+!includeurl KubernetesPuml/OSS/KubernetesNode.puml
+!includeurl KubernetesPuml/OSS/KubernetesNs.puml
+!includeurl KubernetesPuml/OSS/KubernetesPod.puml
+!includeurl KubernetesPuml/OSS/KubernetesPsp.puml
+!includeurl KubernetesPuml/OSS/KubernetesPv.puml
+!includeurl KubernetesPuml/OSS/KubernetesPvc.puml
+!includeurl KubernetesPuml/OSS/KubernetesQuota.puml
+!includeurl KubernetesPuml/OSS/KubernetesRb.puml
+!includeurl KubernetesPuml/OSS/KubernetesRole.puml
+!includeurl KubernetesPuml/OSS/KubernetesRs.puml
+!includeurl KubernetesPuml/OSS/KubernetesSa.puml
+!includeurl KubernetesPuml/OSS/KubernetesSc.puml
+!includeurl KubernetesPuml/OSS/KubernetesSched.puml
+!includeurl KubernetesPuml/OSS/KubernetesSecret.puml
+!includeurl KubernetesPuml/OSS/KubernetesSts.puml
+!includeurl KubernetesPuml/OSS/KubernetesSvc.puml
+!includeurl KubernetesPuml/OSS/KubernetesUser.puml
+!includeurl KubernetesPuml/OSS/KubernetesVol.puml
+
+actor "DevOps" as devopsAlias
+collections "Client Apps" as clientalias
+collections "Helm Charts" as helmalias
+
+left to right direction
+
+' Azure Components
+AzureActiveDirectory(aad, "\nAzure\nActive Directory", "Global")
+AzureContainerRegistry(acr, "ACR", "Canada Central")
+AzureCosmosDb(cosmos, "\nCosmos DB", "Global")
+AzureKeyVault(keyvault, "\nAzure\nKey Vault", "Global")
+AzureLoadBalancer(alb, "\nLoad\nBalancer", "Canada Central")
+AzureSqlDatabase(sql, "\nExternal\ndata stores", "Canada Central")
+AzurePipelines(ado, "CI/CD\nAzure Pipelines", "Global")
+
+' Kubernetes Components
+Cluster_Boundary(cluster, "Kubernetes Cluster") {
+    KubernetesApi(KubernetesApi, "Kubernetes API", "")
+    
+    Namespace_Boundary(nsFrontEnd, "Front End") {
+        KubernetesIng(ingress, "API Gateway", "")
+    }
+
+    Namespace_Boundary(nsBackEnd, "Back End") {
+        KubernetesPod(KubernetesBE1, "", "")
+        KubernetesPod(KubernetesBE2, "", "")
+        KubernetesPod(KubernetesBE3, "", "")
+    }
+
+    Namespace_Boundary(nsUtil, "Utiliy Services") {
+        KubernetesPod(KubernetesUtil1, "", "")
+        KubernetesPod(KubernetesUtil2, "","")
+    }
+}
+
+Rel(devopsAlias, aad, "AUTH")
+Rel(helmalias, KubernetesApi, "helm upgrade")
+
+Rel(aad, keyvault, " ")
+Rel(KubernetesApi, aad, "RBAC", "ASYNC")
+
+Rel(clientalias, alb, "HTTP", "ASYNC")
+Rel(alb, ingress, "HTTP", "ASYNC")
+
+Rel(ingress, KubernetesBE1, " ")
+Rel(KubernetesBE1, KubernetesBE2, " ")
+Rel(KubernetesBE1, KubernetesBE3, " ")
+
+Rel(KubernetesBE2, sql, " ")
+Rel(KubernetesBE3, keyvault, "Pod Identity")
+Rel(KubernetesBE3, cosmos, " ")
+
+Rel(ado, acr, "docker push")
+Rel_U(KubernetesApi, acr, "docker pull")
+
+
+@enduml

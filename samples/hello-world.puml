@@ -28,16 +28,16 @@ left to right direction
 
 ' Kubernetes Components
 Cluster_Boundary(cluster, "Kubernetes Cluster") {
-    Namespace_Boundary(ns, "Back End") {
+    Namespace_Boundary(ns, "Web") {
         KubernetesSvc(svc, "service", "")
-        KubernetesPod(pod1, "", "")
-        KubernetesPod(pod2, "", "")
+        KubernetesPod(pod1, "web-pod1", "")
+        KubernetesPod(pod2, "web-pod2", "")
     }
 }
 
 Rel(userAlias,svc,"get HTTP/1.1 index.html", "1")
 Rel(svc,pod1,"load Balances to Pods", "2")
 Rel(svc,pod2,"load Balances to Pods", "2")
-Rel(pod1, svc, "serves content", "3")
+Rel_U(pod1, svc, "serves content", "3")
 Rel(svc, userAlias, "return content to", "4")
 @enduml
