@@ -13,10 +13,7 @@ skinparam ranksep 10
 !includeurl AzurePuml/AzureSimplified.puml
 
 ' Kubernetes
-!define KubernetesC4 https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master
-'!includeurl KubernetesC4/kubernetes_C4.puml
-'!includeurl KubernetesC4/kubernetes_Container.puml
-!includeurl KubernetesC4/kubernetes_Context.puml
+!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
 
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
@@ -36,9 +33,10 @@ Cluster_Boundary(cluster, "Kubernetes Cluster") {
     Namespace_Boundary(ns, "Back End") {
         KubernetesIng(ingress, "your.domain.com", "")
         KubernetesSvc(svc, "service", "")
-        KubernetesPod(pod1, "", "")
-        KubernetesPod(pod2, "", "")
-        KubernetesPod(pod3, "", "")
+        KubernetesPod(pod1, "pod1", "")
+        KubernetesPod(pod2, "pod2", "")
+        KubernetesPod(pod3, "pod3", "")
+        
         KubernetesRs(rs,"","")
         KubernetesDeploy(deploy,"deployment","")
         KubernetesHpa(hpa, "HPA", "")

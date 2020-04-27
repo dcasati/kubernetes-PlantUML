@@ -50,8 +50,7 @@ skinparam ranksep 10
 !includeurl AzurePuml/AzureSimplified.puml
 
 ' Kubernetes
-!define KubernetesC4 https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
-!includeurl KubernetesC4/kubernetes_Context.puml
+!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
 
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 

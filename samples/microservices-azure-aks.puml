@@ -32,44 +32,8 @@ skinparam ranksep 10
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
 !includeurl KubernetesPuml/OSS/KubernetesApi.puml
-!includeurl KubernetesPuml/OSS/KubernetesCcm.puml
-!includeurl KubernetesPuml/OSS/KubernetesCm.puml
-!includeurl KubernetesPuml/OSS/KubernetesCm.puml
-!includeurl KubernetesPuml/OSS/KubernetesCrb.puml
-!includeurl KubernetesPuml/OSS/KubernetesCrd.puml
-!includeurl KubernetesPuml/OSS/KubernetesCrole.puml
-!includeurl KubernetesPuml/OSS/KubernetesCronjob.puml
-!includeurl KubernetesPuml/OSS/KubernetesDeploy.puml
-!includeurl KubernetesPuml/OSS/KubernetesDs.puml
-!includeurl KubernetesPuml/OSS/KubernetesEp.puml
-!includeurl KubernetesPuml/OSS/KubernetesEtcd.puml
-!includeurl KubernetesPuml/OSS/KubernetesGroup.puml
-!includeurl KubernetesPuml/OSS/KubernetesHpa.puml
 !includeurl KubernetesPuml/OSS/KubernetesIng.puml
-!includeurl KubernetesPuml/OSS/KubernetesJob.puml
-!includeurl KubernetesPuml/OSS/KubernetesKproxy.puml
-!includeurl KubernetesPuml/OSS/KubernetesKubelet.puml
-!includeurl KubernetesPuml/OSS/KubernetesLimits.puml
-!includeurl KubernetesPuml/OSS/KubernetesMaster.puml
-!includeurl KubernetesPuml/OSS/KubernetesNetpol.puml
-!includeurl KubernetesPuml/OSS/KubernetesNode.puml
-!includeurl KubernetesPuml/OSS/KubernetesNs.puml
 !includeurl KubernetesPuml/OSS/KubernetesPod.puml
-!includeurl KubernetesPuml/OSS/KubernetesPsp.puml
-!includeurl KubernetesPuml/OSS/KubernetesPv.puml
-!includeurl KubernetesPuml/OSS/KubernetesPvc.puml
-!includeurl KubernetesPuml/OSS/KubernetesQuota.puml
-!includeurl KubernetesPuml/OSS/KubernetesRb.puml
-!includeurl KubernetesPuml/OSS/KubernetesRole.puml
-!includeurl KubernetesPuml/OSS/KubernetesRs.puml
-!includeurl KubernetesPuml/OSS/KubernetesSa.puml
-!includeurl KubernetesPuml/OSS/KubernetesSc.puml
-!includeurl KubernetesPuml/OSS/KubernetesSched.puml
-!includeurl KubernetesPuml/OSS/KubernetesSecret.puml
-!includeurl KubernetesPuml/OSS/KubernetesSts.puml
-!includeurl KubernetesPuml/OSS/KubernetesSvc.puml
-!includeurl KubernetesPuml/OSS/KubernetesUser.puml
-!includeurl KubernetesPuml/OSS/KubernetesVol.puml
 
 actor "DevOps" as devopsAlias
 collections "Client Apps" as clientalias

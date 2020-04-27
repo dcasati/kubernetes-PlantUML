@@ -28,10 +28,7 @@ skinparam ranksep 20
 !includeurl AzurePuml/Storage/AzureStorage.puml
 
 ' Kubernetes
-!define KubernetesC4 https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/
-!includeurl KubernetesC4/kubernetes_C4.puml  
-!includeurl KubernetesC4/kubernetes_Container.puml
-!includeurl KubernetesC4/kubernetes_Context.puml
+!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
 
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
