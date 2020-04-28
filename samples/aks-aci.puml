@@ -28,10 +28,10 @@ skinparam ranksep 20
 !includeurl AzurePuml/Storage/AzureStorage.puml
 
 ' Kubernetes
-!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
-
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
+!includeurl KubernetesPuml/kubernetes_Context.puml
+!includeurl KubernetesPuml/kubernetes_Simplified.puml
 !includeurl KubernetesPuml/OSS/KubernetesPod.puml
 
 actor "User" as userAlias

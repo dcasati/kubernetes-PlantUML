@@ -6,12 +6,6 @@ scale max 1024 width
 skinparam nodesep 10
 skinparam ranksep 10
 
-' Azure
-'!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
-
-'!includeurl AzurePuml/AzureCommon.puml
-!includeurl dist/kubernetes_Simplified.puml
-
 ' Kubernetes
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 

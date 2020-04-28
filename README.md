@@ -20,9 +20,13 @@ TL;DR - If you're familiar with PlantUML this is what you need:
 
 ```vim
 ' Kubernetes
-!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
-
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+
+' global definition
+!includeurl KubernetesPuml/kubernetes_Context.puml
+!includeurl KubernetesPuml/kubernetes_Simplified.puml
+
+' k8s specific components
 !includeurl KubernetesPuml/OSS/KubernetesPod.puml
 !includeurl KubernetesPuml/OSS/KubernetesPsp.puml
 !includeurl KubernetesPuml/OSS/KubernetesPv.puml
@@ -61,10 +65,10 @@ skinparam ranksep 10
 !includeurl AzurePuml/AzureSimplified.puml
 
 ' Kubernetes
-!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
-
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
+!includeurl KubernetesPuml/kubernetes_Context.puml
+!includeurl KubernetesPuml/kubernetes_Simplified.puml
 !includeurl KubernetesPuml/OSS/KubernetesSvc.puml
 !includeurl KubernetesPuml/OSS/KubernetesPod.puml
 
@@ -110,9 +114,11 @@ skinparam ranksep 10
 !includeurl AzurePuml/AzureSimplified.puml
 
 ' Kubernetes
-!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
-
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+
+
+!includeurl KubernetesPuml/kubernetes_Context.puml
+!includeurl KubernetesPuml/kubernetes_Simplified.puml
 
 !includeurl KubernetesPuml/OSS/KubernetesApi.puml
 !includeurl KubernetesPuml/OSS/KubernetesSvc.puml
@@ -197,9 +203,10 @@ skinparam ranksep 10
 !includeurl AzurePuml/Storage/AzureStorage.puml
 
 ' Kubernetes
-!includeurl https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist/kubernetes_Context.puml
-
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+
+!includeurl KubernetesPuml/kubernetes_Context.puml
+!includeurl KubernetesPuml/kubernetes_Simplified.puml
 
 !includeurl KubernetesPuml/OSS/KubernetesApi.puml
 !includeurl KubernetesPuml/OSS/KubernetesIng.puml
