@@ -13,6 +13,8 @@ This repo is heavily influenced by the awesome work from Ricardo Niepel on [Azur
   - [Examples](#examples)
   - [Using kubernetes-PlantUML with other PlantUML files](#using-kubernetes-plantuml-with-other-plantuml-files)
   - [List of Supported Symbols](#list-of-supported-symbols)
+  - [Contributing](#contributing)
+  - [Reference](#reference)
 
 ## Getting Started
 
@@ -40,6 +42,8 @@ If you're starting with PlantUML, here's what you need:
   1. VS Code with the PlantUML extension ![PlantUML](https://github.com/dcasati/better-diagrams/blob/master/images/plantUML.png)
   1. [Graphviz](https://graphviz.gitlab.io)
   1. Copy one of the examples from: https://github.com/dcasati/kubernetes-PlantUML/tree/master/samples
+
+I also have an introduction to PlantUML [here](https://github.com/dcasati/better-diagrams)
 
 ## Examples
 
@@ -312,3 +316,13 @@ OSS | KubernetesRb </br> (Kubernetes Rb) |![KubernetesRb](dist/OSS/KubernetesRb(
 OSS | KubernetesEtcd </br> (Kubernetes Etcd)|![KubernetesEtcd](dist/OSS/KubernetesEtcd(m).png?raw=true) | OSS/KubernetesEtcd.puml
 OSS | KubernetesIng </br> (Kubernetes Ing) |![KubernetesIng](dist/OSS/KubernetesIng(m).png?raw=true) | OSS/KubernetesIng.puml
 OSS | KubernetesHpa </br> (Kubernetes Hpa) |![KubernetesHpa](dist/OSS/KubernetesHpa(m).png?raw=true) | OSS/KubernetesHpa.puml
+
+## Contributing
+I've built this on a necessity that I have for making better diagrams when Kubernetes is part of the solution. This is based on a community effort 
+and as such this should belong to the Kubernetes community. Feel free to fork and to submit PRs.
+
+## Reference
+None of the work here would be possible without the foundation from Ricardo Niepel, PlantUML and the C4 Model
+
+* Ricardo Niepel - [Azure-PlantUML](https://github.com/RicardoNiepel/Azure-PlantUML)
+* C4 Model - [https://c4model.com](https://c4model.com/)
