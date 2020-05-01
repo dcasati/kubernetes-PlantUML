@@ -15,6 +15,12 @@ skinparam ranksep 10
 !includeurl KubernetesPuml/OSS/KubernetesSvc.puml
 !includeurl KubernetesPuml/OSS/KubernetesPod.puml
 
+' Azure
+!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureSimplified.puml
+
 actor "User" as userAlias
 left to right direction
 
