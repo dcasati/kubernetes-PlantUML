@@ -8,5 +8,5 @@ MOkm8fZPGIQSwEFfWx8F8pMJROczXMbFOeFI0UFMxkanz2JJRyxV
 }
 
 KubernetesEntityColoring(KubernetesPsp)
-!define KubernetesPsp(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesPsp, KubernetesPsp)
-!define KubernetesPsp(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesPsp, KubernetesPsp)
+!define KubernetesPsp(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, KUBERNETES_SYMBOL_COLOR, KubernetesPsp, KubernetesPsp)
+!define KubernetesPsp(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, KUBERNETES_SYMBOL_COLOR, KubernetesPsp, KubernetesPsp)

@@ -8,5 +8,5 @@ jWCCbf6Tdg-AOhD8HT4E6Lkw2uCzNOUvmaWtJtow1NdbxbS9AmP-HQ1aB-veQf8JHhj0lpLxQYOrQUqF
 }
 
 KubernetesEntityColoring(KubernetesCronjob)
-!define KubernetesCronjob(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)
-!define KubernetesCronjob(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)
+!define KubernetesCronjob(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, KUBERNETES_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)
+!define KubernetesCronjob(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, KUBERNETES_SYMBOL_COLOR, KubernetesCronjob, KubernetesCronjob)

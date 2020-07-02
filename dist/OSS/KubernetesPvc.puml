@@ -8,5 +8,5 @@ QCTO5_HEiAhwI-6YN_tciLvXfICyvzIiDIffG5VRqpcQD1M39g1P8ee3kf27UIf8kA4Oah2uRazNBKK0
 }
 
 KubernetesEntityColoring(KubernetesPvc)
-!define KubernetesPvc(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesPvc, KubernetesPvc)
-!define KubernetesPvc(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesPvc, KubernetesPvc)
+!define KubernetesPvc(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, KUBERNETES_SYMBOL_COLOR, KubernetesPvc, KubernetesPvc)
+!define KubernetesPvc(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, KUBERNETES_SYMBOL_COLOR, KubernetesPvc, KubernetesPvc)

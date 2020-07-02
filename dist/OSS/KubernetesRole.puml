@@ -9,5 +9,5 @@ cYKG2eI0m6fsUPNMB2sHcSDuLaYtt7VasuxinNZcZMO9X8W1WbAH6CQpnhyv-2E9bmYzfl02epVWjw-U
 }
 
 KubernetesEntityColoring(KubernetesRole)
-!define KubernetesRole(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesRole, KubernetesRole)
-!define KubernetesRole(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesRole, KubernetesRole)
+!define KubernetesRole(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, KUBERNETES_SYMBOL_COLOR, KubernetesRole, KubernetesRole)
+!define KubernetesRole(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, KUBERNETES_SYMBOL_COLOR, KubernetesRole, KubernetesRole)
