@@ -28,6 +28,7 @@ skinparam ranksep 10
 
 ' Kubernetes
 !define KubernetesC4 https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/
+!includeurl KubernetesC4/kubernetes_Common.puml
 !includeurl KubernetesC4/kubernetes_C4.puml  
 !includeurl KubernetesC4/kubernetes_Container.puml
 !includeurl KubernetesC4/kubernetes_Context.puml

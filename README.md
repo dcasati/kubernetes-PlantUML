@@ -25,6 +25,7 @@ TL;DR - If you're familiar with PlantUML this is what you need:
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
 ' global definition
+!includeurl KubernetesPuml/kubernetes_Common.puml
 !includeurl KubernetesPuml/kubernetes_Context.puml
 !includeurl KubernetesPuml/kubernetes_Simplified.puml
 
@@ -71,6 +72,7 @@ skinparam ranksep 10
 ' Kubernetes
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
+!includeurl KubernetesPuml/kubernetes_Common.puml
 !includeurl KubernetesPuml/kubernetes_Context.puml
 !includeurl KubernetesPuml/kubernetes_Simplified.puml
 !includeurl KubernetesPuml/OSS/KubernetesSvc.puml
@@ -120,7 +122,7 @@ skinparam ranksep 10
 ' Kubernetes
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
-
+!includeurl KubernetesPuml/kubernetes_Common.puml
 !includeurl KubernetesPuml/kubernetes_Context.puml
 !includeurl KubernetesPuml/kubernetes_Simplified.puml
 
@@ -209,6 +211,7 @@ skinparam ranksep 10
 ' Kubernetes
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
+!includeurl KubernetesPuml/kubernetes_Common.puml
 !includeurl KubernetesPuml/kubernetes_Context.puml
 !includeurl KubernetesPuml/kubernetes_Simplified.puml
 

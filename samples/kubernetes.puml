@@ -11,6 +11,7 @@ skinparam ranksep 10
 
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
+!includeurl KubernetesPuml/kubernetes_Common.puml
 !includeurl KubernetesPuml/kubernetes_Context.puml
 !includeurl KubernetesPuml/kubernetes_Simplified.puml
 
