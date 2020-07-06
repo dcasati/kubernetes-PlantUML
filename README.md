@@ -50,7 +50,7 @@ I also have an introduction to PlantUML [here](https://github.com/dcasati/better
 
 A basic `hello world` example could look like this:
 
-![kubernetes](media/kubernetes.png)
+![kubernetes](media/hello-world.png)
 
 This picture was rendered with the following code:
 
@@ -95,7 +95,7 @@ Rel(svc, userAlias, "return content to", "4")
 
 A more complete example would look like this picture:
 
-![more complete example](media/kubernetes-example2.png)
+![more complete example](media/kubernetes.png)
 
 and the accompaining code:
 
