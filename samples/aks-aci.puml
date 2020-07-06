@@ -12,20 +12,10 @@ skinparam ranksep 20
 !includeurl AzurePuml/AzureCommon.puml
 !includeurl AzurePuml/AzureSimplified.puml
 
-!includeurl AzurePuml/Compute/AzureAppService.puml
-!includeurl AzurePuml/Compute/AzureBatch.puml
 !includeurl AzurePuml/Containers/AzureContainerInstance.puml
 !includeurl AzurePuml/Containers/AzureContainerRegistry.puml
 !includeurl AzurePuml/Containers/AzureKubernetesService.puml
-!includeurl AzurePuml/Databases/AzureDatabaseForPostgreSQL.puml
-!includeurl AzurePuml/Databases/AzureCosmosDb.puml
 !includeurl AzurePuml/Databases/AzureSqlDatabase.puml
-!includeurl AzurePuml/DevOps/AzurePipelines.puml
-!includeurl AzurePuml/Identity/AzureActiveDirectory.puml
-!includeurl AzurePuml/Networking/AzureLoadBalancer.puml
-!includeurl AzurePuml/Security/AzureKeyVault.puml
-!includeurl AzurePuml/Storage/AzureBlobStorage.puml
-!includeurl AzurePuml/Storage/AzureStorage.puml
 
 ' Kubernetes
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
@@ -50,7 +40,7 @@ Cluster_Boundary(cluster, "AKS") {
         KubernetesPod(KubernetesNet1, ".NET", "")
         KubernetesPod(KubernetesNet2, ".NET", "")
         KubernetesPod(KubernetesNet3, ".NET", "")
-    
+
         KubernetesPod(KubernetesNode1, "node", "")
         KubernetesPod(KubernetesNode2, "node","")
         KubernetesPod(KubernetesNode3, "node","")
