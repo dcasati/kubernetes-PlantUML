@@ -9,5 +9,5 @@ xe9uvWEd1Xf_GimiF52WeD0vdK5ldvxPcuxasp-E7m
 }
 
 KubernetesEntityColoring(KubernetesApi)
-!define KubernetesApi(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesApi, KubernetesApi)
-!define KubernetesApi(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesApi, KubernetesApi)
+!define KubernetesApi(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, KUBERNETES_SYMBOL_COLOR, KubernetesApi, KubernetesApi)
+!define KubernetesApi(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, KUBERNETES_SYMBOL_COLOR, KubernetesApi, KubernetesApi)

@@ -25,6 +25,7 @@ TL;DR - If you're familiar with PlantUML this is what you need:
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
 ' global definition
+!includeurl KubernetesPuml/kubernetes_Common.puml
 !includeurl KubernetesPuml/kubernetes_Context.puml
 !includeurl KubernetesPuml/kubernetes_Simplified.puml
 
@@ -49,7 +50,7 @@ I also have an introduction to PlantUML [here](https://github.com/dcasati/better
 
 A basic `hello world` example could look like this:
 
-![kubernetes](media/kubernetes.png)
+![kubernetes](media/hello-world.png)
 
 This picture was rendered with the following code:
 
@@ -62,17 +63,13 @@ scale max 1024 width
 skinparam nodesep 10
 skinparam ranksep 10
 
-' Azure
-!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
-
-!includeurl AzurePuml/AzureCommon.puml
-!includeurl AzurePuml/AzureSimplified.puml
-
 ' Kubernetes
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
+!includeurl KubernetesPuml/kubernetes_Common.puml
 !includeurl KubernetesPuml/kubernetes_Context.puml
 !includeurl KubernetesPuml/kubernetes_Simplified.puml
+
 !includeurl KubernetesPuml/OSS/KubernetesSvc.puml
 !includeurl KubernetesPuml/OSS/KubernetesPod.puml
 
@@ -98,7 +95,7 @@ Rel(svc, userAlias, "return content to", "4")
 
 A more complete example would look like this picture:
 
-![more complete example](media/kubernetes-example2.png)
+![more complete example](media/kubernetes.png)
 
 and the accompaining code:
 
@@ -111,20 +108,13 @@ scale max 1024 width
 skinparam nodesep 10
 skinparam ranksep 10
 
-' Azure
-!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
-
-!includeurl AzurePuml/AzureCommon.puml
-!includeurl AzurePuml/AzureSimplified.puml
-
 ' Kubernetes
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
-
+!includeurl KubernetesPuml/kubernetes_Common.puml
 !includeurl KubernetesPuml/kubernetes_Context.puml
 !includeurl KubernetesPuml/kubernetes_Simplified.puml
 
-!includeurl KubernetesPuml/OSS/KubernetesApi.puml
 !includeurl KubernetesPuml/OSS/KubernetesSvc.puml
 !includeurl KubernetesPuml/OSS/KubernetesIng.puml
 !includeurl KubernetesPuml/OSS/KubernetesPod.puml
@@ -140,9 +130,10 @@ Cluster_Boundary(cluster, "Kubernetes Cluster") {
     Namespace_Boundary(ns, "Back End") {
         KubernetesIng(ingress, "your.domain.com", "")
         KubernetesSvc(svc, "service", "")
-        KubernetesPod(pod1, "", "")
-        KubernetesPod(pod2, "", "")
-        KubernetesPod(pod3, "", "")
+        KubernetesPod(pod1, "pod1", "")
+        KubernetesPod(pod2, "pod2", "")
+        KubernetesPod(pod3, "pod3", "")
+
         KubernetesRs(rs,"","")
         KubernetesDeploy(deploy,"deployment","")
         KubernetesHpa(hpa, "HPA", "")
@@ -192,23 +183,18 @@ skinparam ranksep 10
 !includeurl AzurePuml/AzureCommon.puml
 !includeurl AzurePuml/AzureSimplified.puml
 
-!includeurl AzurePuml/Compute/AzureAppService.puml
-!includeurl AzurePuml/Compute/AzureBatch.puml
 !includeurl AzurePuml/Containers/AzureContainerRegistry.puml
-!includeurl AzurePuml/Containers/AzureKubernetesService.puml
-!includeurl AzurePuml/Databases/AzureDatabaseForPostgreSQL.puml
 !includeurl AzurePuml/Databases/AzureCosmosDb.puml
 !includeurl AzurePuml/Databases/AzureSqlDatabase.puml
 !includeurl AzurePuml/DevOps/AzurePipelines.puml
 !includeurl AzurePuml/Identity/AzureActiveDirectory.puml
 !includeurl AzurePuml/Networking/AzureLoadBalancer.puml
 !includeurl AzurePuml/Security/AzureKeyVault.puml
-!includeurl AzurePuml/Storage/AzureBlobStorage.puml
-!includeurl AzurePuml/Storage/AzureStorage.puml
 
 ' Kubernetes
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
+!includeurl KubernetesPuml/kubernetes_Common.puml
 !includeurl KubernetesPuml/kubernetes_Context.puml
 !includeurl KubernetesPuml/kubernetes_Simplified.puml
 
@@ -234,7 +220,7 @@ AzurePipelines(ado, "CI/CD\nAzure Pipelines", "Global")
 ' Kubernetes Components
 Cluster_Boundary(cluster, "Kubernetes Cluster") {
     KubernetesApi(KubernetesApi, "Kubernetes API", "")
-    
+
     Namespace_Boundary(nsFrontEnd, "Front End") {
         KubernetesIng(ingress, "API Gateway", "")
     }
@@ -270,8 +256,6 @@ Rel(KubernetesBE3, cosmos, " ")
 
 Rel(ado, acr, "docker push")
 Rel_U(KubernetesApi, acr, "docker pull")
-
-
 @enduml
 ```
 

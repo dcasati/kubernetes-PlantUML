@@ -12,23 +12,18 @@ skinparam ranksep 10
 !includeurl AzurePuml/AzureCommon.puml
 !includeurl AzurePuml/AzureSimplified.puml
 
-!includeurl AzurePuml/Compute/AzureAppService.puml
-!includeurl AzurePuml/Compute/AzureBatch.puml
 !includeurl AzurePuml/Containers/AzureContainerRegistry.puml
-!includeurl AzurePuml/Containers/AzureKubernetesService.puml
-!includeurl AzurePuml/Databases/AzureDatabaseForPostgreSQL.puml
 !includeurl AzurePuml/Databases/AzureCosmosDb.puml
 !includeurl AzurePuml/Databases/AzureSqlDatabase.puml
 !includeurl AzurePuml/DevOps/AzurePipelines.puml
 !includeurl AzurePuml/Identity/AzureActiveDirectory.puml
 !includeurl AzurePuml/Networking/AzureLoadBalancer.puml
 !includeurl AzurePuml/Security/AzureKeyVault.puml
-!includeurl AzurePuml/Storage/AzureBlobStorage.puml
-!includeurl AzurePuml/Storage/AzureStorage.puml
 
 ' Kubernetes
 !define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
 
+!includeurl KubernetesPuml/kubernetes_Common.puml
 !includeurl KubernetesPuml/kubernetes_Context.puml
 !includeurl KubernetesPuml/kubernetes_Simplified.puml
 
@@ -54,7 +49,7 @@ AzurePipelines(ado, "CI/CD\nAzure Pipelines", "Global")
 ' Kubernetes Components
 Cluster_Boundary(cluster, "Kubernetes Cluster") {
     KubernetesApi(KubernetesApi, "Kubernetes API", "")
-    
+
     Namespace_Boundary(nsFrontEnd, "Front End") {
         KubernetesIng(ingress, "API Gateway", "")
     }
@@ -90,6 +85,4 @@ Rel(KubernetesBE3, cosmos, " ")
 
 Rel(ado, acr, "docker push")
 Rel_U(KubernetesApi, acr, "docker pull")
-
-
 @enduml

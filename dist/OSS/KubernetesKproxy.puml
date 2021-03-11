@@ -9,5 +9,5 @@ Zeh4hW9Elk9P442Zk73aJaV-qP5v2k1YBPu1WoL2ZueTTmCuxgO25W1LYsSFQeyyj3axatTLL6gvV5uz
 }
 
 KubernetesEntityColoring(KubernetesKproxy)
-!define KubernetesKproxy(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
-!define KubernetesKproxy(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
+!define KubernetesKproxy(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, KUBERNETES_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)
+!define KubernetesKproxy(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, KUBERNETES_SYMBOL_COLOR, KubernetesKproxy, KubernetesKproxy)

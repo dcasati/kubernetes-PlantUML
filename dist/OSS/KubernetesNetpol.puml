@@ -8,5 +8,5 @@ oWXWKn8X-RHCGDaOC5uM7ZqF2tzPsDtZOR5asNrgenUB4w1HxyXFF1-v0E9G8W68d5xIfLHFMrJ6gHly
 }
 
 KubernetesEntityColoring(KubernetesNetpol)
-!define KubernetesNetpol(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesNetpol, KubernetesNetpol)
-!define KubernetesNetpol(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesNetpol, KubernetesNetpol)
+!define KubernetesNetpol(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, KUBERNETES_SYMBOL_COLOR, KubernetesNetpol, KubernetesNetpol)
+!define KubernetesNetpol(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, KUBERNETES_SYMBOL_COLOR, KubernetesNetpol, KubernetesNetpol)

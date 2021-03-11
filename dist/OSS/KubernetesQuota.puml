@@ -9,5 +9,5 @@ AF4SWkgEBT9En5b5svd40Mzl81y_UavDpAIslvp_
 }
 
 KubernetesEntityColoring(KubernetesQuota)
-!define KubernetesQuota(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, KubernetesQuota, KubernetesQuota)
-!define KubernetesQuota(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, KubernetesQuota, KubernetesQuota)
+!define KubernetesQuota(e_alias, e_label, e_techn) KubernetesEntity(e_alias, e_label, e_techn, KUBERNETES_SYMBOL_COLOR, KubernetesQuota, KubernetesQuota)
+!define KubernetesQuota(e_alias, e_label, e_techn, e_descr) KubernetesEntity(e_alias, e_label, e_techn, e_descr, KUBERNETES_SYMBOL_COLOR, KubernetesQuota, KubernetesQuota)
