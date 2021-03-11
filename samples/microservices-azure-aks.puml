@@ -6,6 +6,8 @@ scale max 1024 width
 skinparam nodesep 10
 skinparam ranksep 10
 
+skinparam linetype polyline
+
 ' Azure
 !define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
 
