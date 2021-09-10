@@ -11,7 +11,7 @@
 
 !define TECHN_FONT_SIZE 12
 
-skinparam defaultTextAlignment left
+skinparam defaultTextAlignment center
 
 skinparam wrapWidth 200
 skinparam maxMessageSize 150
